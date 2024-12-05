@@ -4,11 +4,13 @@
 
 ![Wyne Ybanez](media/avatar.webp)
 
-<br>
+<br><br>
 
-## About Me
+# About Me
+{#About}
 
-# Enthusiastic, Learner, Curious, Active, Driven. Currently building with Laravel.
+## Enthusiastic, Learner, Curious, Active, Driven. Currently building with [Laravel](https://laravel.com/)
+{.laravel}
 
 I gained considerable experience whilst working for a digital marketing agency. I’ve developed and maintained websites for businesses within construction, healthcare, science and many other sectors.
 Educational Background
@@ -21,70 +23,47 @@ At present, I've been coding professionally and my skills are constantly evolvin
 
 ### Active Skills
 
-HTML
+- HTML
+- CSS
+- PHP
+- SCSS
+- Tailwind
+- JavaScript
+- Vue
+- SQL
+- Git
+- Wordpress
+{.flexbox-horizontal}
 
-CSS
+### Previous Tools
 
-PHP
+- Python
+- Java
+- Flask
+- Django
+- MongoDB
+- Express.js
+- Markdoc
+- Material UI
+- Bootstrap
+{.flexbox-horizontal}
 
-SCSS
+### Diving Into
 
-Tailwind
+- HTTP
+- Laravel
+- *NIX Systems
+- Intertia.js
+{.flexbox-horizontal}
 
-JavaScript
+<br><br>
 
-Vue
+# Contact
 
-SQL
+Send me an E-mail and I'll reach out to you as soon as I can. Here's a helpful link - [Message](mailto:wyneybanez@gmail.com)
+{.contact}
 
-Git
-
-### Wordpress Diving Into
-
-HTTP
-
-Laravel
-
-*NIX
-
-Intertia.js
-
-React
-
-### Previously
-
-Python
-
-Java
-
-Flask
-
-Django
-
-MongoDB
-
-Express.js
-
-Markdoc
-
-Material UI
-
-Bootstrap
-
-
-## Gallery
-
-![Austria](media/austria.jpg)
-![Boat](media/boat.jpg)
-![Croatia](media/croatia.jpg)
-![Fireworks](media/fireworks.jpg)
-![Hallstatt](media/hallstatt.jpg)
-![Lemonade](media/lemonade.jpg)
-{.gallery}
-
-
-## Contact
-
-- Phone: +1 (123) 456-7890
-- Email: jane.doe@example.com
-- Address: 123 Main St, Anytown, CA 12345
+- +353 83 809 2402
+- wyneybanez@gmail.com
+- Cork, Munster, Ireland
+{.contact}
