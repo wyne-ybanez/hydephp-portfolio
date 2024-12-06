@@ -1322,9 +1322,6 @@ video {
 .flex-wrap{
   flex-wrap: wrap;
 }
-.content-end{
-  align-content: flex-end;
-}
 .items-center{
   align-items: center;
 }
@@ -1530,6 +1527,10 @@ video {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1542,20 +1543,23 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.pb-0{
+  padding-bottom: 0px;
+}
 .pb-12{
   padding-bottom: 3rem;
 }
 .pb-16{
   padding-bottom: 4rem;
 }
+.pb-24{
+  padding-bottom: 6rem;
+}
 .pb-3{
   padding-bottom: 0.75rem;
 }
 .pb-40{
   padding-bottom: 10rem;
-}
-.pb-\[8\.25rem\]{
-  padding-bottom: 8.25rem;
 }
 .pl-2{
   padding-left: 0.5rem;
@@ -1569,11 +1573,14 @@ video {
 .pl-8{
   padding-left: 2rem;
 }
+.pt-28{
+  padding-top: 7rem;
+}
 .pt-3{
   padding-top: 0.75rem;
 }
-.pt-\[8\.25rem\]{
-  padding-top: 8.25rem;
+.pt-\[6\.25rem\]{
+  padding-top: 6.25rem;
 }
 .text-left{
   text-align: left;
@@ -1803,6 +1810,22 @@ a:hover {
 .prose img {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+}
+
+.light-bg {
+    display: block;
+}
+
+.dark-bg {
+    display: none;
+}
+
+.dark .light-bg {
+    display: none;
+}
+
+.dark .dark-bg {
+    display: block;
 }
 
 .dark\:prose-invert:is(.dark *){
@@ -2253,18 +2276,6 @@ a:hover {
 
   .lg\:ml-8{
     margin-left: 2rem;
-  }
-
-  .lg\:max-h-\[500px\]{
-    max-height: 500px;
-  }
-
-  .lg\:max-w-\[400px\]{
-    max-width: 400px;
-  }
-
-  .lg\:gap-24{
-    gap: 6rem;
   }
 
   .lg\:bg-center{

@@ -54,3 +54,19 @@ a:hover {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
+
+.light-bg {
+    display: block;
+}
+
+.dark-bg {
+    display: none;
+}
+
+.dark .light-bg {
+    display: none;
+}
+
+.dark .dark-bg {
+    display: block;
+}

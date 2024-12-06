@@ -13,7 +13,7 @@ $pageTitle = 'Projects - Wyne Ybañez';
     @include('components.nav')
 
     <section>
-        <main id="content" class="mx-auto max-w-7xl py-16 px-8">
+        <main id="content" class="mx-auto max-w-7xl pb-16 pt-[6.25rem] px-8">
             <article class="mx-auto prose">
 
                 <div class="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
