@@ -53,8 +53,6 @@
                     </div>
                 </div>
 
-                {{--  --}}
-
                 <div class="article-content">
                     <h1 id="about">About Me</h1>
                     <h2 class="laravel">Enthusiastic, Learner, Curious, Active, Driven. Currently building with <a
