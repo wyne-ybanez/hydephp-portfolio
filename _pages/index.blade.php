@@ -3,7 +3,6 @@
 
 @include('components.head')
 
-
 <body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-black dark:text-white"
     x-data="{ navigationOpen: false }" x-on:keydown.escape="navigationOpen = false;">
     <a href="#content" id="skip-to-content"

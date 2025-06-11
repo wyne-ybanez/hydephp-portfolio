@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ config('hyde.language', 'en') }}">
+<html lang="en">
 
-<head>
-    @include('hyde::layouts.head')
-</head>
+@include('components.head')
 
 <body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-black dark:text-white"
     x-data="{ navigationOpen: false }" x-on:keydown.escape="navigationOpen = false;">
     @include('hyde::components.skip-to-content-button')
-    @include('hyde::layouts.navigation')
+    @include('components.nav')
 
     <section>
         @yield('content')
     </section>
 
-    @include('hyde::layouts.footer')
-
-    @include('hyde::layouts.scripts')
+    @include('components.footer')
 </body>
 
 </html>

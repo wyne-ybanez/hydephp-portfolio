@@ -3,7 +3,7 @@
 
     {{-- desktop --}}
     <div class="flex flex-grow items-center flex-shrink-0 text-gray-700 dark:text-gray-200">
-        <a href="index.html" class="font-bold flex flex-col flex-wrap px-6" aria-label="Home page">
+        <a href="/index.html/" class="font-bold flex flex-col flex-wrap px-6" aria-label="Home page">
             Wyne Ybañez
             <span class="font-light text-[14px]">Developer Portfolio</span>
         </a>
@@ -60,14 +60,16 @@
                     class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>Home</a>
             </li>
             <li class="md:mx-2">
-                <a href="projects.html"
-                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/projects.html') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+                <a href="/projects.html/"
+                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/projects.html/') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
                     class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>Projects</a>
             </li>
             <li class="md:mx-2">
-                <a href="/#about" aria-current="page"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">About</a>
+                <a href="/about.html/"
+                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/about.html/') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+                @else
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>About</a>
             </li>
             <li class="md:mx-2">
                 <a href="#footer"

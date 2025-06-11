@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects - Wyne Ybañez</title>
+    <title>Projects - Wyne Ybanez</title>
 
     <meta name="twitter:title" content="Wyne Ybañez - Web Developer">
     <meta property="og:title" content="Wyne Ybañez - Web Developer">
@@ -21,19 +21,14 @@
     <link rel="stylesheet" href="media/app.css?v=22dc5d4eeaec84a6e6c6b472b0f6a74b">
     <meta id="meta-color-scheme" name="color-scheme" content="light">
 </head>
-
 <body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-black dark:text-white"
     x-data="{ navigationOpen: false }" x-on:keydown.escape="navigationOpen = false;">
-    <a href="#content" id="skip-to-content"
-        class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip
-        to content</a>
-
-    <nav aria-label="Main navigation" id="main-navigation"
+    <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>    <nav aria-label="Main navigation" id="main-navigation"
     class="flex flex-wrap items-center justify-between py-4 md:px-10 bg-white shadow-md dark:bg-black sticky top-0 z-40 dark:border-b-[0.8px] dark:border-white">
 
     
     <div class="flex flex-grow items-center flex-shrink-0 text-gray-700 dark:text-gray-200">
-        <a href="index.html" class="font-bold flex flex-col flex-wrap px-6" aria-label="Home page">
+        <a href="/index.html/" class="font-bold flex flex-col flex-wrap px-6" aria-label="Home page">
             Wyne Ybañez
             <span class="font-light text-[14px]">Developer Portfolio</span>
         </a>
@@ -88,12 +83,12 @@
                                         class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >Home</a>
             </li>
             <li class="md:mx-2">
-                <a href="projects.html"
+                <a href="/projects.html/"
                                         class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >Projects</a>
             </li>
             <li class="md:mx-2">
-                <a href="/#about" aria-current="page"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">About</a>
+                <a href="/about.html/"
+                                        class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >About</a>
             </li>
             <li class="md:mx-2">
                 <a href="#footer"
@@ -108,22 +103,23 @@
 </nav>
 
     <section>
-        <main id="content" class="mx-auto max-w-7xl p-[6.25rem] px-8">
-            <article class="mx-auto dark:prose-invert">
-                <div class="justify-center mb-6">
-                    <h1 class="text-5xl md:text-8xl font-light text-left dark:text-white">Projects</h1>
-                </div>
-                <div class="md:pt-20 pt-10 md:pb-24 pb-20" data-aos="fade-in" data-aos-delay="600">
-                    <h3
-                        class="text-zinc-900 dark:text-gray-200 lg:px-0 col-span-3 text-xl md:text-3xl font-base leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
-                        In this collection you'll find a diverse array
-                        of milestone projects, largely developed out of personal interest.
-                        Feel free to contribute or clone any of these.
-                    </h3>
-                </div>
+            
+    <main id="content" class="mx-auto max-w-7xl p-[6.25rem] px-8">
+        <article class="mx-auto dark:prose-invert">
+            <div class="justify-center mb-6">
+                <h1 class="text-5xl md:text-8xl font-light text-left dark:text-white">Projects</h1>
+            </div>
+            <div class="md:pt-20 pt-10 md:pb-24 pb-20" data-aos="fade-in" data-aos-delay="600">
+                <h3
+                    class="text-zinc-900 dark:text-gray-200 lg:px-0 col-span-3 text-xl md:text-3xl font-base leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
+                    In this collection you'll find a diverse array
+                    of milestone projects, largely developed out of personal interest.
+                    Feel free to contribute or clone any of these.
+                </h3>
+            </div>
 
-                <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-10 lg:gap-20 md:px-7 lg:px-0">
-                                            <div>
+            <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-10 lg:gap-20 md:px-7 lg:px-0">
+                                    <div>
     <a href="https://github.com/wyne-ybanez/simple-laravel-e-commerce/" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-[200px] md:h-72 object-cover">
@@ -144,7 +140,7 @@
         This is a Laravel project for an e-commerce website/app that allows online sellers to sell, categorize and take payment for the sale of goods online. I made it for a fictional digital art shop but can be used to scaffold a basic e-commerce site.
     </p>
 </div>
-                                            <div>
+                                    <div>
     <a href="https://github.com/wyne-ybanez/Weathertop-v2" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-[200px] md:h-72 object-cover">
@@ -165,7 +161,7 @@
         Version 2.0 of WeatherTop project. A weather station reporting and reading app. Utilizes the OpenWeather API. Made with the Express JS framework.
     </p>
 </div>
-                                            <div>
+                                    <div>
     <a href="https://github.com/wyne-ybanez/SneakrHead" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-[200px] md:h-72 object-cover">
@@ -186,7 +182,7 @@
         Sneak&#039;r Heads is a Shoe E-Commerce Store. It&#039;s a project that uses Django for full stack development and is one of my milestone projects.
     </p>
 </div>
-                                            <div>
+                                    <div>
     <a href="https://space-invaderz-ultra-wyne.netlify.app/" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-[200px] md:h-72 object-cover">
@@ -207,7 +203,7 @@
         Space invaders built on canvas using JavaScript. A classic spaceship arcade game created through Object Oriented Programming, game styling and particle effects.
     </p>
 </div>
-                                            <div>
+                                    <div>
     <a href="https://github.com/wyne-ybanez/Scrapedeep" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-[200px] md:h-72 object-cover">
@@ -228,7 +224,7 @@
         A web content scraper made using PHP, this is a Scrapeheap replica but improved further with user-interfaces and different file formats. Used to scrape content from an obsolete site.
     </p>
 </div>
-                                            <div>
+                                    <div>
     <a href="https://wyne-ybanez.github.io/personal-portfolio-master/" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-[200px] md:h-72 object-cover">
@@ -249,10 +245,10 @@
         A User-Centric Portfolio project used to display what I had learned whilst first learning how to code. This was my very first milestone project. Made using foundational HTML and CSS skills.
     </p>
 </div>
-                                    </div>
+                            </div>
 
-            </article>
-        </main>
+        </article>
+    </main>
     </section>
 
     <footer id="footer" aria-label="Page footer" class="w-full bg-white dark:bg-black">
