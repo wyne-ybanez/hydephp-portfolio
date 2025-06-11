@@ -11,7 +11,7 @@ return [
         [
             'title' => 'WeatherTop V2',
             'link' => 'https://github.com/wyne-ybanez/Weathertop-v2',
-            'imgUrl' => 'media/weathertop.webp',
+            'imgUrl' => 'media/weathertop-v2.webp',
             'description' => "Version 2.0 of WeatherTop project. A weather station reporting and reading app. Utilizes the OpenWeather API. Made with the Express JS framework.",
         ],
         [

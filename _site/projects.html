@@ -29,11 +29,11 @@
         to content</a>
 
     <nav aria-label="Main navigation" id="main-navigation"
-    class="flex flex-wrap items-center justify-between p-4 bg-white shadow-md dark:bg-black sticky top-0 z-40 ">
+    class="flex flex-wrap items-center justify-between py-4 md:px-10 bg-white shadow-md dark:bg-black sticky top-0 z-40 dark:border-b-[0.8px] dark:border-white">
 
     
     <div class="flex flex-grow items-center flex-shrink-0 text-gray-700 dark:text-gray-200">
-        <a href="index.html" class="font-bold px-4 flex flex-col flex-wrap" aria-label="Home page">
+        <a href="index.html" class="font-bold flex flex-col flex-wrap px-6" aria-label="Home page">
             Wyne Ybañez
             <span class="font-light text-[14px]">Developer Portfolio</span>
         </a>
@@ -80,7 +80,7 @@
     </div>
 
     <div id="main-navigation-links"
-        class="w-full x-uncloak-md md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700"
+        class="w-full x-uncloak-md md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto pl-10 md:pl-6 md:px-10 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-0"
         :class="navigationOpen ? '' : 'hidden'" x-cloak>
         <ul aria-label="Navigation links" class="md:flex-grow md:flex justify-end">
             <li class="md:mx-2">
@@ -110,158 +110,146 @@
     <section>
         <main id="content" class="mx-auto max-w-7xl p-[6.25rem] px-8">
             <article class="mx-auto dark:prose-invert">
-                <div class="pb-0 grid grid-cols-1 md:grid-cols-2">
-                    <div class="justify-center mb-6">
-                        <h1 class="text-[2.8rem]">Projects</h1>
-                    </div>
+                <div class="justify-center mb-6">
+                    <h1 class="text-5xl md:text-8xl font-light text-left dark:text-white">Projects</h1>
+                </div>
+                <div class="md:pt-20 pt-10 md:pb-24 pb-20" data-aos="fade-in" data-aos-delay="600">
+                    <h3
+                        class="text-zinc-900 dark:text-gray-200 lg:px-0 col-span-3 text-xl md:text-3xl font-base leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
+                        In this collection you'll find a diverse array
+                        of milestone projects, largely developed out of personal interest.
+                        Feel free to contribute or clone any of these.
+                    </h3>
                 </div>
 
                 <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-10 lg:gap-20 md:px-7 lg:px-0">
                                             <div>
-    <a href="https://github.com/wyne-ybanez/simple-laravel-e-commerce/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+    <a href="https://github.com/wyne-ybanez/simple-laravel-e-commerce/" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/digi-art-overview.webp"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
+            <div class="h-[200px] md:h-72 object-cover">
+                <img src="media/digi-art-overview.webp" alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full" />
             </div>
         </div>
     </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-            </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
+    <h3
+        class="
+        bg-transparent dark:text-zinc-100
+        w-max font-base rounded-md mt-8
+        lg:px-0 text-xl
     ">
         Digi.Art - Custom Laravel E-commerce
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
         This is a Laravel project for an e-commerce website/app that allows online sellers to sell, categorize and take payment for the sale of goods online. I made it for a fictional digital art shop but can be used to scaffold a basic e-commerce site.
     </p>
-</div>                                            <div>
-    <a href="https://github.com/wyne-ybanez/Weathertop-v2" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+</div>
+                                            <div>
+    <a href="https://github.com/wyne-ybanez/Weathertop-v2" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/weathertop.webp"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
+            <div class="h-[200px] md:h-72 object-cover">
+                <img src="media/weathertop-v2.webp" alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full" />
             </div>
         </div>
     </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-            </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
+    <h3
+        class="
+        bg-transparent dark:text-zinc-100
+        w-max font-base rounded-md mt-8
+        lg:px-0 text-xl
     ">
         WeatherTop V2
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
         Version 2.0 of WeatherTop project. A weather station reporting and reading app. Utilizes the OpenWeather API. Made with the Express JS framework.
     </p>
-</div>                                            <div>
-    <a href="https://github.com/wyne-ybanez/SneakrHead" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+</div>
+                                            <div>
+    <a href="https://github.com/wyne-ybanez/SneakrHead" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/sneakr-heads.webp"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
+            <div class="h-[200px] md:h-72 object-cover">
+                <img src="media/sneakr-heads.webp" alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full" />
             </div>
         </div>
     </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-            </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
+    <h3
+        class="
+        bg-transparent dark:text-zinc-100
+        w-max font-base rounded-md mt-8
+        lg:px-0 text-xl
     ">
         Sneak&#039;r Heads
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
         Sneak&#039;r Heads is a Shoe E-Commerce Store. It&#039;s a project that uses Django for full stack development and is one of my milestone projects.
     </p>
-</div>                                            <div>
-    <a href="https://space-invaderz-ultra-wyne.netlify.app/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+</div>
+                                            <div>
+    <a href="https://space-invaderz-ultra-wyne.netlify.app/" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/space-invaders.webp"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
+            <div class="h-[200px] md:h-72 object-cover">
+                <img src="media/space-invaders.webp" alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full" />
             </div>
         </div>
     </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-            </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
+    <h3
+        class="
+        bg-transparent dark:text-zinc-100
+        w-max font-base rounded-md mt-8
+        lg:px-0 text-xl
     ">
         Space Invaderz Ultra
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
         Space invaders built on canvas using JavaScript. A classic spaceship arcade game created through Object Oriented Programming, game styling and particle effects.
     </p>
-</div>                                            <div>
-    <a href="https://github.com/wyne-ybanez/Scrapedeep" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+</div>
+                                            <div>
+    <a href="https://github.com/wyne-ybanez/Scrapedeep" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/scrapedeep.webp"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
+            <div class="h-[200px] md:h-72 object-cover">
+                <img src="media/scrapedeep.webp" alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full" />
             </div>
         </div>
     </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-            </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
+    <h3
+        class="
+        bg-transparent dark:text-zinc-100
+        w-max font-base rounded-md mt-8
+        lg:px-0 text-xl
     ">
         Scrape Deep
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
         A web content scraper made using PHP, this is a Scrapeheap replica but improved further with user-interfaces and different file formats. Used to scrape content from an obsolete site.
     </p>
-</div>                                            <div>
-    <a href="https://wyne-ybanez.github.io/personal-portfolio-master/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+</div>
+                                            <div>
+    <a href="https://wyne-ybanez.github.io/personal-portfolio-master/" target="_blank" class="w-full block md:rounded-md dark:border border">
         <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/old-portfolio.webp"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
+            <div class="h-[200px] md:h-72 object-cover">
+                <img src="media/old-portfolio.webp" alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full" />
             </div>
         </div>
     </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-            </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
+    <h3
+        class="
+        bg-transparent dark:text-zinc-100
+        w-max font-base rounded-md mt-8
+        lg:px-0 text-xl
     ">
         Old Portfolio Site
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
         A User-Centric Portfolio project used to display what I had learned whilst first learning how to code. This was my very first milestone project. Made using foundational HTML and CSS skills.
     </p>
-</div>                                    </div>
+</div>
+                                    </div>
 
             </article>
         </main>
