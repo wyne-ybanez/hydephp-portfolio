@@ -38,5 +38,12 @@ return [
             'imgUrl' => 'media/old-portfolio.webp',
             'description' => 'A User-Centric Portfolio project used to display what I had learned whilst first learning how to code. This was my very first milestone project. Made using foundational HTML and CSS skills.',
         ],
-    ]
+    ],
+
+    'social_links' => [
+        'instagram' => "https://instagram.com/wyne.ybanez/",
+        'twitter' => "https://twitter.com/",
+        'linkedin' => "https://www.linkedin.com/in/wyne-ybanez-8a2763193/",
+        'github' => "https://github.com/wyne-ybanez/",
+    ],
 ];

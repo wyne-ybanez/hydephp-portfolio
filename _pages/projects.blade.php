@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-10 lg:gap-20 md:px-7 lg:px-0">
-                    @foreach (config('projects.personal_projects') as $idx => $proj)
+                    @foreach (config('data.personal_projects') as $idx => $proj)
                         @include('components.project-card', [
                             'title' => $proj['title'],
                             'link' => $proj['link'],
