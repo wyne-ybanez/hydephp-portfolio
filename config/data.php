@@ -1,6 +1,14 @@
 <?php
 
 return [
+    'githubUsername' => "wyne-ybanez",
+    'name' => "W.Y.",
+    'designation' => "",
+    'avatarUrl' => "/avatar.webp",
+    'email' => "wyneybanez@gmail.com",
+    'phone' => "+353 83 809 2402",
+    'address' => "Cork, Munster, Ireland",
+
     'personal_projects' => [
         [
             'title' => 'Digi.Art - Custom Laravel E-commerce',
@@ -45,5 +53,11 @@ return [
         'twitter' => "https://twitter.com/",
         'linkedin' => "https://www.linkedin.com/in/wyne-ybanez-8a2763193/",
         'github' => "https://github.com/wyne-ybanez/",
+    ],
+
+    'about' => [
+        'title' => "Enthusiastic, Curious, Active, Driven",
+        'currentProject' => "Laravel",
+        'currentProjectUrl' => "https://github.com/wyne-ybanez/",
     ],
 ];
