@@ -70,13 +70,23 @@ Since the site is documentation focused, the output directory will be the root d
 
 You can scaffold blog post files using the `php hyde make:post` command which automatically creates the front matter, based on your input selections. You can also scaffold pages with the `php hyde make:page` command.
 
+Examples:
+
 ```bash
 php hyde make:page "Page Title" --type="docs"
 
 php hyde make:post
 
-php hyde make:page
+php hyde make:page --blade
 ```
+
+| Argument/Option   | Description                                                                |
+| ----------------- | -------------------------------------------------------------------------- |
+| `title`           | The name of the page file to create. Will be used to generate the filename |
+| `--type=markdown` | The type of page to create (`markdown`, `blade`, or `docs`)                |
+| `--blade`         | Create a Blade page                                                        |
+| `--docs`          | Create a Documentation page                                                |
+| `--force`         | Overwrite any existing files                                               |
 
 &nbsp;
 
