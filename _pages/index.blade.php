@@ -4,7 +4,7 @@
 @include('components.head')
 
 
-<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white"
+<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-black dark:text-white"
     x-data="{ navigationOpen: false }" x-on:keydown.escape="navigationOpen = false;">
     <a href="#content" id="skip-to-content"
         class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip
@@ -12,7 +12,48 @@
 
     @include('components.nav')
 
-    <section>
+    <div class="mx-auto md:mx-24 lg:mx-auto max-w-6xl">
+        <div
+            class="mt-[2.5rem] md:mt-24 flex items-start justify-center md:justify-start mx-auto lg:mx-[13rem] max-w-6xl">
+            <h1 class="text-[2rem] md:text-[1.7rem] uppercase tracking-[0.2em] font-bold md:font-semibold text-zinc-500 dark:text-gray-300 my-2 md:pb-8 whitespace-nowrap transition duration-500"
+                data-aos="fade-in">
+                Wyne Ybañez
+            </h1>
+        </div>
+
+        <div class="hidden md:block overflow-hidden mx-auto lg:mx-[13rem]">
+            <div class="flex flex-col w-full justify-center md:justify-start items-center md:items-start">
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8 overflow-hidden"
+                    data-aos="fade" data-aos-delay="300">
+                    <div
+                        class="text-black dark:text-gray-400 transform transition duration-500 flex md:flex-row items-center">
+                        <div>Developer</div>
+                        <span class="line hidden md:inline-block md:w-[30vw]"></span>
+                    </div>
+                </h2>
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
+                    data-aos="fade" data-aos-delay="600">
+                    <div
+                        class="text-black dark:text-gray-300 transform transition duration-500 flex md:flex-row items-center">
+                        <span class="plus inline-block"></span>
+                        <div>Engineer</div>
+                    </div>
+                </h2>
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
+                    data-aos="fade" data-aos-delay="900">
+                    <div
+                        class="text-black dark:text-gray-200 transform transition duration-500 flex md:flex-row items-center">
+                        <span class="plus inline-block"></span>
+                        <span class="plus inline-block"></span>
+                        <div>Artisan</div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+
+    </div>
+
+    {{-- <section>
         <main id="content" class="mx-auto max-w-7xl py-[6.25rem] px-8">
             <article class="mx-auto prose dark:prose-invert">
                 <div class="pb-0 grid grid-cols-1 md:grid-cols-2">
@@ -126,7 +167,7 @@
                 </div>
             </article>
         </main>
-    </section>
+    </section> --}}
 
     @include('components.footer')
 </body>

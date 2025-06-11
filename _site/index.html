@@ -22,31 +22,41 @@
     <meta id="meta-color-scheme" name="color-scheme" content="light">
 </head>
 
-<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white"
+<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-black dark:text-white"
     x-data="{ navigationOpen: false }" x-on:keydown.escape="navigationOpen = false;">
     <a href="#content" id="skip-to-content"
         class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip
         to content</a>
 
-    <nav aria-label="Main navigation" id="main-navigation" class="flex flex-wrap items-center justify-between p-4 shadow-lg sm:shadow-xl md:shadow-none dark:bg-gray-800">
+    <nav aria-label="Main navigation" id="main-navigation"
+    class="flex flex-wrap items-center justify-between p-4 bg-white shadow-md dark:bg-black sticky top-0 z-40 ">
+
+    
     <div class="flex flex-grow items-center flex-shrink-0 text-gray-700 dark:text-gray-200">
         <a href="index.html" class="font-bold px-4 flex flex-col flex-wrap" aria-label="Home page">
             Wyne Ybañez
             <span class="font-light text-[14px]">Developer Portfolio</span>
         </a>
         <div class="ml-auto">
-            <button @click="toggleTheme" class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200" title="Toggle theme">
+            <button @click="toggleTheme"
+                class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200"
+                title="Toggle theme">
                 <span class="sr-only">Toggle dark theme</span>
-                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
                 </svg>
-                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                 </svg>
             </button>
         </div>
     </div>
 
+    
     <div class="block md:hidden">
         <button id="navigation-toggle-button" class="flex items-center px-3 py-1 hover:text-gray-700 dark:text-gray-200"
             aria-label="Toggle navigation menu" @click="navigationOpen = ! navigationOpen">
@@ -62,158 +72,83 @@
                 x-show="navigationOpen" style="display: none;">
                 <title>Close Menu</title>
                 <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
             </svg>
         </button>
     </div>
 
-    <div id="main-navigation-links" class="w-full x-uncloak-md md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700"
+    <div id="main-navigation-links"
+        class="w-full x-uncloak-md md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700"
         :class="navigationOpen ? '' : 'hidden'" x-cloak>
         <ul aria-label="Navigation links" class="md:flex-grow md:flex justify-end">
             <li class="md:mx-2">
                 <a href="/" aria-current="page"
-                                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
-                                >Home</a>
+                                        class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >Home</a>
             </li>
             <li class="md:mx-2">
                 <a href="projects.html"
-                                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                                >Projects</a>
+                                        class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >Projects</a>
             </li>
-             <li class="md:mx-2">
+            <li class="md:mx-2">
                 <a href="/#about" aria-current="page"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                >About</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">About</a>
             </li>
             <li class="md:mx-2">
                 <a href="#footer"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                >Contact</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">Contact</a>
             </li>
             <li class="md:mx-2">
                 <a href="https://github.com/wyne-ybanez" target="_blank"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                >Github</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">Github</a>
             </li>
         </ul>
     </div>
 </nav>
-    <section>
-        <main id="content" class="mx-auto max-w-7xl py-[6.25rem] px-8">
-            <article class="mx-auto prose dark:prose-invert">
-                <div class="pb-0 grid grid-cols-1 md:grid-cols-2">
-                    <div class="justify-center">
-                        <h1 class="text-[1.6rem]">Hi, I'm Wyne Ybañez</h1>
-                        <h2 class="text-[2.8rem] mb-10 mt-0 md:my-0">Web Developer</h2>
-                    </div>
-                </div>
 
-                <div class="w-full">
-                    <img class="light-bg w-full object-cover my-0 md:py-28" src="media/bg-light.jpg"
-                        alt="Index hero image" />
+    <div class="mx-auto md:mx-24 lg:mx-auto max-w-6xl">
+        <div
+            class="mt-[2.5rem] md:mt-24 flex items-start justify-center md:justify-start mx-auto lg:mx-[13rem] max-w-6xl">
+            <h1 class="text-[2rem] md:text-[1.7rem] uppercase tracking-[0.2em] font-bold md:font-semibold text-zinc-500 dark:text-gray-300 my-2 md:pb-8 whitespace-nowrap transition duration-500"
+                data-aos="fade-in">
+                Wyne Ybañez
+            </h1>
+        </div>
+
+        <div class="hidden md:block overflow-hidden mx-auto lg:mx-[13rem]">
+            <div class="flex flex-col w-full justify-center md:justify-start items-center md:items-start">
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8 overflow-hidden"
+                    data-aos="fade" data-aos-delay="300">
+                    <div
+                        class="text-black dark:text-gray-400 transform transition duration-500 flex md:flex-row items-center">
+                        <div>Developer</div>
+                        <span class="line hidden md:inline-block md:w-[30vw]"></span>
+                    </div>
+                </h2>
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
+                    data-aos="fade" data-aos-delay="600">
+                    <div
+                        class="text-black dark:text-gray-300 transform transition duration-500 flex md:flex-row items-center">
+                        <span class="plus inline-block"></span>
+                        <div>Engineer</div>
+                    </div>
+                </h2>
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
+                    data-aos="fade" data-aos-delay="900">
+                    <div
+                        class="text-black dark:text-gray-200 transform transition duration-500 flex md:flex-row items-center">
+                        <span class="plus inline-block"></span>
+                        <span class="plus inline-block"></span>
+                        <div>Artisan</div>
+                    </div>
+                </h2>
+            </div>
+        </div>
+
+    </div>
+
     
-                    <div class="dark-bg w-full">
-                        <div class="grid md:grid-cols-3 gap-8 pt-6 pb-24 md:py-28">
-                            <a href="https://fast-travel-self-driving.netlify.app/" target="_blank"
-                                class="w-full block col-span-3">
-                                <div class="relative overflow-hidden md:rounded-md dark:shadow-cyan-400 dark:shadow-xl h-fit">
-                                    <img src="media/fast-travel.png" alt="Fast-Travel, Self-Driving Taxi Booking App"
-                                        class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md" />
-                                </div>
-                            </a>
-                            <a href="https://space-invaderz-ultra-wyne.netlify.app//" target="_blank"
-                                class="w-full block col-span-3 sm:col-span-2">
-                                <div class="relative overflow-hidden md:rounded-md dark:shadow-purple-500 dark:shadow-xl h-fit">
-                                    <img src="media/space-invaders.png" alt="Space Invaderz Ultra"
-                                        class="transform hover:scale-105 transition duration-1000 ease-out object-cover" />
-                                </div>
-                            </a>
-                            <a href="https://weathertop-v2.herokuapp.com/" target="_blank"
-                                class="w-full block col-span-3 sm:col-span-1 object-cover">
-                                <div class="relative overflow-hidden md:rounded-md dark:shadow-green-300 dark:shadow-xl h-fit">
-                                    <img src="media/weathertop.png" alt="WeatherTop V2"
-                                        class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article-content">
-                    <div></div>
-                    <h1 id="about">About Me</h1>
-                    <h2 class="laravel">Enthusiastic, Learner, Curious, Active, Driven. Currently building with <a
-                            href="https://laravel.com/">Laravel</a></h2>
-                    <p>I gained considerable experience whilst working for a digital marketing agency. I’ve developed
-                        and maintained websites for businesses within construction, healthcare, science and many other
-                        sectors.</p>
-
-                    <h3>Educational Background</h3>
-                    <p>I completed my undergraduate with a Degree in Arts: English Literature and Computer Science.
-                        During my time in college, I developed a strong foundation in critical thinking, creativity, and
-                        cultural studies, which enhanced my understanding of diverse human experiences and historical
-                        contexts. During the global COVID-19 pandemic, I decided to broaden my skills by learning a
-                        technical skill, that being Full Stack Software Development. Utilizing various online resources
-                        and joining Code Institute, I immersed myself in the world of web development, developing in
-                        both front-end and back-end technologies. This self-directed learning experience allowed me to
-                        combine my creative background with technical proficiency.</p>
-
-                    <h3>Experience &amp; Continuous Learning</h3>
-                    <p>As a web developer with 2 years of experience, I have honed a diverse skill set spanning website
-                        builds, technical maintenance, client support, and self-directed learning. Throughout my career,
-                        I have consistently demonstrated the ability to collaborate and coordinate effectively with
-                        cross-functional teams to deliver high-quality websites and applications.</p>
-                    <p>One of the hallmarks of my work has been a commitment to thorough troubleshooting, testing, and
-                        software maintenance but also that of enhancing my relationships with others such as clients and
-                        those within my organization. I go above and beyond to identify and resolve issues before they
-                        impact the end-user experience. I track, document, and solve issues with absolute transparency.
-                        This dedication is complemented by my strong customer service orientation - I have a proven
-                        track record of managing support inquiries and training clients on website administration.</p>
-                    <p>Beyond day-to-day operations, I leveraged my research and self-teaching skills to develop my own
-                        expertise. I undergo coding courses and build personal projects in order to enhance my skills
-                        and also familiarize myself with emerging technologies. Projects I have made have not only
-                        expanded my own knowledge, but have also enabled me to contribute positively to the
-                        organizations I serve.</p>
-                    </p>
-
-                    <h3>Active Skills</h3>
-                    <ul class="flexbox-horizontal">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
-                        <li>SCSS</li>
-                        <li>Tailwind</li>
-                        <li>JavaScript</li>
-                        <li>Vue</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                        <li>Wordpress</li>
-                    </ul>
-
-                    <h3>Previous Tools</h3>
-                    <ul class="flexbox-horizontal">
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>Flask</li>
-                        <li>Django</li>
-                        <li>MongoDB</li>
-                        <li>Express.js</li>
-                        <li>Markdoc</li>
-                        <li>Material UI</li>
-                        <li>Bootstrap</li>
-                    </ul>
-
-                    <h3>Diving Into</h3>
-                    <ul class="flexbox-horizontal">
-                        <li>HTTP</li>
-                        <li>Laravel</li>
-                        <li>*NIX Systems</li>
-                        <li>Intertia.js</li>
-                    </ul>
-                </div>
-            </article>
-        </main>
-    </section>
 
     <footer id="footer" aria-label="Page footer" class="w-full bg-slate-100 dark:bg-gray-800">
     <div class="max-w-7xl mx-auto px-8 py-16">

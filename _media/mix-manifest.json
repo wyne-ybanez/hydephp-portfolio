@@ -4,8 +4,6 @@
     "/_media/app.css": "/_media/app.css",
     "/_media/app.js": "/_media/app.js",
     "/_media/avatar.webp": "/_media/avatar.webp",
-    "/_media/bg-dark-1.svg": "/_media/bg-dark-1.svg",
-    "/_media/bg-dark.svg": "/_media/bg-dark.svg",
     "/_media/bg-light.jpg": "/_media/bg-light.jpg",
     "/_media/fast-travel.png": "/_media/fast-travel.png",
     "/_media/favicon.ico": "/_media/favicon.ico",
@@ -17,5 +15,11 @@
     "/_media/sneakr-heads.png": "/_media/sneakr-heads.png",
     "/_media/space-invaders.png": "/_media/space-invaders.png",
     "/_media/ub20.png": "/_media/ub20.png",
-    "/_media/weathertop.png": "/_media/weathertop.png"
+    "/_media/weathertop.png": "/_media/weathertop.png",
+    "/_media/digi-art-overview.webp": "/_media/digi-art-overview.webp",
+    "/_media/old-portfolio.webp": "/_media/old-portfolio.webp",
+    "/_media/scrapedeep.webp": "/_media/scrapedeep.webp",
+    "/_media/sneakr-heads.webp": "/_media/sneakr-heads.webp",
+    "/_media/space-invaders.webp": "/_media/space-invaders.webp",
+    "/_media/weathertop-v2.webp": "/_media/weathertop-v2.webp"
 }

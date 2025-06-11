@@ -8,3 +8,12 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 } else {
     document.documentElement.classList.remove('dark')
 }
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+    duration: 1000,
+    easing: "ease-out-cubic",
+    once: true,
+  });

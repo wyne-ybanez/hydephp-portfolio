@@ -22,31 +22,41 @@
     <meta id="meta-color-scheme" name="color-scheme" content="light">
 </head>
 
-<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-gray-900 dark:text-white"
+<body id="app" class="flex flex-col min-h-screen overflow-x-hidden dark:bg-black dark:text-white"
     x-data="{ navigationOpen: false }" x-on:keydown.escape="navigationOpen = false;">
     <a href="#content" id="skip-to-content"
         class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip
         to content</a>
 
-    <nav aria-label="Main navigation" id="main-navigation" class="flex flex-wrap items-center justify-between p-4 shadow-lg sm:shadow-xl md:shadow-none dark:bg-gray-800">
+    <nav aria-label="Main navigation" id="main-navigation"
+    class="flex flex-wrap items-center justify-between p-4 bg-white shadow-md dark:bg-black sticky top-0 z-40 ">
+
+    
     <div class="flex flex-grow items-center flex-shrink-0 text-gray-700 dark:text-gray-200">
         <a href="index.html" class="font-bold px-4 flex flex-col flex-wrap" aria-label="Home page">
             Wyne Ybañez
             <span class="font-light text-[14px]">Developer Portfolio</span>
         </a>
         <div class="ml-auto">
-            <button @click="toggleTheme" class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200" title="Toggle theme">
+            <button @click="toggleTheme"
+                class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200"
+                title="Toggle theme">
                 <span class="sr-only">Toggle dark theme</span>
-                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
                 </svg>
-                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                 </svg>
             </button>
         </div>
     </div>
 
+    
     <div class="block md:hidden">
         <button id="navigation-toggle-button" class="flex items-center px-3 py-1 hover:text-gray-700 dark:text-gray-200"
             aria-label="Toggle navigation menu" @click="navigationOpen = ! navigationOpen">
@@ -62,45 +72,44 @@
                 x-show="navigationOpen" style="display: none;">
                 <title>Close Menu</title>
                 <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
             </svg>
         </button>
     </div>
 
-    <div id="main-navigation-links" class="w-full x-uncloak-md md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700"
+    <div id="main-navigation-links"
+        class="w-full x-uncloak-md md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700"
         :class="navigationOpen ? '' : 'hidden'" x-cloak>
         <ul aria-label="Navigation links" class="md:flex-grow md:flex justify-end">
             <li class="md:mx-2">
                 <a href="/" aria-current="page"
-                                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                                >Home</a>
+                                        class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >Home</a>
             </li>
             <li class="md:mx-2">
                 <a href="projects.html"
-                                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
-                                >Projects</a>
+                                        class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" >Projects</a>
             </li>
-             <li class="md:mx-2">
+            <li class="md:mx-2">
                 <a href="/#about" aria-current="page"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                >About</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">About</a>
             </li>
             <li class="md:mx-2">
                 <a href="#footer"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                >Contact</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">Contact</a>
             </li>
             <li class="md:mx-2">
                 <a href="https://github.com/wyne-ybanez" target="_blank"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100"
-                >Github</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">Github</a>
             </li>
         </ul>
     </div>
 </nav>
+
     <section>
         <main id="content" class="mx-auto max-w-7xl p-[6.25rem] px-8">
-            <article class="mx-auto prose dark:prose-invert">
+            <article class="mx-auto dark:prose-invert">
                 <div class="pb-0 grid grid-cols-1 md:grid-cols-2">
                     <div class="justify-center mb-6">
                         <h1 class="text-[2.8rem]">Projects</h1>
@@ -109,11 +118,11 @@
 
                 <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-10 lg:gap-20 md:px-7 lg:px-0">
                                             <div>
-    <a href="https://github.com/wyne-ybanez/Scrapedeep" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+    <a href="https://github.com/wyne-ybanez/simple-laravel-e-commerce/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-72 object-cover">
                 <img
-                    src="media/scrapedeep.png"
+                    src="media/digi-art-overview.webp"
                     alt="portfolio"
                     class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
                 />
@@ -121,29 +130,23 @@
         </div>
     </a>
     <div class="mt-2 text-sm lg:px-0 flex gap-2">
-                                    <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    PHP
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    RoachPHP
-                </span>
-                        </div>
+            </div>
     <h3 class="
         dark:bg-zinc-900 dark:text-zinc-100
         w-max font-semibold rounded-md mt-5
         lg:px-0 text-2xl
     ">
-        Scrape Deep
+        Digi.Art - Custom Laravel E-commerce
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
-        A web content scraper, this is a Scrapeheap replica but improved further with user-interfaces and different file formats.
+        This is a Laravel project for an e-commerce website/app that allows online sellers to sell, categorize and take payment for the sale of goods online. I made it for a fictional digital art shop but can be used to scaffold a basic e-commerce site.
     </p>
 </div>                                            <div>
     <a href="https://github.com/wyne-ybanez/Weathertop-v2" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-72 object-cover">
                 <img
-                    src="media/weathertop.png"
+                    src="media/weathertop.webp"
                     alt="portfolio"
                     class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
                 />
@@ -151,19 +154,7 @@
         </div>
     </a>
     <div class="mt-2 text-sm lg:px-0 flex gap-2">
-                                    <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Javascript
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Express
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Node
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Fomantic
-                </span>
-                        </div>
+            </div>
     <h3 class="
         dark:bg-zinc-900 dark:text-zinc-100
         w-max font-semibold rounded-md mt-5
@@ -172,80 +163,14 @@
         WeatherTop V2
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
-        Version 2.0 of WeatherTop project. A Weather reporting and reading app. Uses AccuWeather&#039;s API.
-    </p>
-</div>                                            <div>
-    <a href="https://space-invaderz-ultra-wyne.netlify.app/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
-        <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/space-invaders.png"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
-            </div>
-        </div>
-    </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-                                    <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Canvas
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Javascript
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    HowlerJS
-                </span>
-                        </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
-    ">
-        Space Invaderz Ultra
-    </h3>
-    <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
-        Space invaders built on canvas. Shooting game practicing OOP, Styles and Particles.
-    </p>
-</div>                                            <div>
-    <a href="https://fast-travel-self-driving.netlify.app/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
-        <div class="relative overflow-hidden md:rounded-md">
-            <div class="h-72 object-cover">
-                <img
-                    src="media/fast-travel.png"
-                    alt="portfolio"
-                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
-                />
-            </div>
-        </div>
-    </a>
-    <div class="mt-2 text-sm lg:px-0 flex gap-2">
-                                    <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    HTML
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    CSS
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Javascript
-                </span>
-                        </div>
-    <h3 class="
-        dark:bg-zinc-900 dark:text-zinc-100
-        w-max font-semibold rounded-md mt-5
-        lg:px-0 text-2xl
-    ">
-        Fast-Travel
-    </h3>
-    <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
-        Fast-Travel is a self-driving car booking application. Technology used is mainly front-end and local device data storage.
+        Version 2.0 of WeatherTop project. A weather station reporting and reading app. Utilizes the OpenWeather API. Made with the Express JS framework.
     </p>
 </div>                                            <div>
     <a href="https://github.com/wyne-ybanez/SneakrHead" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-72 object-cover">
                 <img
-                    src="media/sneakr-heads.png"
+                    src="media/sneakr-heads.webp"
                     alt="portfolio"
                     class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
                 />
@@ -253,22 +178,7 @@
         </div>
     </a>
     <div class="mt-2 text-sm lg:px-0 flex gap-2">
-                                    <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Python
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Django
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Javascript
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    JQuery
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Bootstrap
-                </span>
-                        </div>
+            </div>
     <h3 class="
         dark:bg-zinc-900 dark:text-zinc-100
         w-max font-semibold rounded-md mt-5
@@ -280,11 +190,11 @@
         Sneak&#039;r Heads is a Shoe E-Commerce Store. It&#039;s a project that uses Django for full stack development and is one of my milestone projects.
     </p>
 </div>                                            <div>
-    <a href="https://wyne-ybanez.github.io/personal-portfolio-master/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+    <a href="https://space-invaderz-ultra-wyne.netlify.app/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
         <div class="relative overflow-hidden md:rounded-md">
             <div class="h-72 object-cover">
                 <img
-                    src="media/portfolio-screenshot.png"
+                    src="media/space-invaders.webp"
                     alt="portfolio"
                     class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
                 />
@@ -292,19 +202,55 @@
         </div>
     </a>
     <div class="mt-2 text-sm lg:px-0 flex gap-2">
-                                    <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    HTML
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    CSS
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Bootstrap
-                </span>
-                            <span class="bg-zinc-200 dark:bg-gray-800 dark:text-gray-300 bg-opacity-[80%] rounded p-2">
-                    Javascript
-                </span>
-                        </div>
+            </div>
+    <h3 class="
+        dark:bg-zinc-900 dark:text-zinc-100
+        w-max font-semibold rounded-md mt-5
+        lg:px-0 text-2xl
+    ">
+        Space Invaderz Ultra
+    </h3>
+    <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
+        Space invaders built on canvas using JavaScript. A classic spaceship arcade game created through Object Oriented Programming, game styling and particle effects.
+    </p>
+</div>                                            <div>
+    <a href="https://github.com/wyne-ybanez/Scrapedeep" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+        <div class="relative overflow-hidden md:rounded-md">
+            <div class="h-72 object-cover">
+                <img
+                    src="media/scrapedeep.webp"
+                    alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
+                />
+            </div>
+        </div>
+    </a>
+    <div class="mt-2 text-sm lg:px-0 flex gap-2">
+            </div>
+    <h3 class="
+        dark:bg-zinc-900 dark:text-zinc-100
+        w-max font-semibold rounded-md mt-5
+        lg:px-0 text-2xl
+    ">
+        Scrape Deep
+    </h3>
+    <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
+        A web content scraper made using PHP, this is a Scrapeheap replica but improved further with user-interfaces and different file formats. Used to scrape content from an obsolete site.
+    </p>
+</div>                                            <div>
+    <a href="https://wyne-ybanez.github.io/personal-portfolio-master/" target="_blank" class="w-full block md:rounded-md shadow shadow-lg dark:shadow-lg dark:hover:shadow-gray-300">
+        <div class="relative overflow-hidden md:rounded-md">
+            <div class="h-72 object-cover">
+                <img
+                    src="media/old-portfolio.webp"
+                    alt="portfolio"
+                    class="md:rounded-md transform hover:scale-105 transition duration-1000 ease-out object-cover h-full w-full"
+                />
+            </div>
+        </div>
+    </a>
+    <div class="mt-2 text-sm lg:px-0 flex gap-2">
+            </div>
     <h3 class="
         dark:bg-zinc-900 dark:text-zinc-100
         w-max font-semibold rounded-md mt-5
@@ -313,7 +259,7 @@
         Old Portfolio Site
     </h3>
     <p class="mt-5 text-base lg:px-0 dark:text-white leading-loose">
-        A User-Centric Portfolio project used to display what I had learned whilst first learning how to code. This was my very first milestone project.
+        A User-Centric Portfolio project used to display what I had learned whilst first learning how to code. This was my very first milestone project. Made using foundational HTML and CSS skills.
     </p>
 </div>                                    </div>
 
