@@ -56,7 +56,7 @@
         {{-- Favourite Projects --}}
         <div class="-mt-40 md:mt-[5.5rem]">
             <div
-                class="flex flex-col md:flex-row justify-between items-center pt-40 md:pt-20 lg:mx-10 md:mb-20 lg:my-0">
+                class="flex flex-col md:flex-row justify-between items-center pt-44 md:pt-20 lg:mx-10 md:mb-20 lg:my-0">
                 <h1
                     class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center">
                     Favourite Projects
@@ -77,7 +77,7 @@
         </div>
 
         {{-- Latest Code --}}
-        <div class="latest-code">
+        {{-- <div class="latest-code">
             <div class="flex flex-col md:flex-row justify-between items-center md:pt-10 md:mx-10">
                 <h2
                     class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center lg:text-left">
@@ -108,7 +108,7 @@
                     ])
                 @endforeach
             </div>
-        </div>
+        </div> --}}
 
     </div>
 

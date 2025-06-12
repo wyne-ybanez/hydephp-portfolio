@@ -1732,8 +1732,8 @@ video {
 .pt-3{
   padding-top: 0.75rem;
 }
-.pt-40{
-  padding-top: 10rem;
+.pt-44{
+  padding-top: 11rem;
 }
 .pt-\[4rem\]{
   padding-top: 4rem;
@@ -2684,6 +2684,11 @@ video {
     padding-right: 2.5rem;
   }
 
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .md\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -2834,11 +2839,6 @@ video {
     margin-right: 13rem;
   }
 
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -2877,8 +2877,8 @@ video {
     padding: 5rem;
   }
 
-  .lg\:p-\[6\.25rem\]{
-    padding: 6.25rem;
+  .lg\:p-\[7rem\]{
+    padding: 7rem;
   }
 
   .lg\:px-0{
