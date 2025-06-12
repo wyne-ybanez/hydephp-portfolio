@@ -66,3 +66,48 @@
 .dark .dark-bg {
     display: block;
 }
+
+.github-repo:hover {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(36, 36, 36, 0.2));
+    border-radius: 10px;
+}
+
+.contact-card {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg,
+            rgba(241, 241, 241, 0.3),
+            rgba(241, 241, 241, 1));
+    border-radius: 10px;
+}
+
+.dark .contact-card {
+    background-image: linear-gradient(120deg, rgba(24, 24, 27, 0.2), rgba(123, 123, 123, 0.307));
+}
+
+.line::before {
+    content: "";
+    height: 2px;
+    background: linear-gradient(120deg, rgba(123, 123, 123, 0.5), rgba(24, 24, 27, 0.5));
+    display: flex;
+    margin-left: 20px;
+    opacity: 1;
+    position: relative;
+}
+
+.dark .line {
+    background: linear-gradient(120deg, rgb(88, 88, 94), rgba(123, 123, 123, 1));
+}
+
+.plus::before {
+    content: '+';
+    height: 2px;
+    color: rgba(123, 123, 123, 0.5);
+    opacity: 1;
+    margin-right: 2rem; }
