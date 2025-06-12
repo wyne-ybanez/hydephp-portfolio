@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="pt-20 grid grid-cols-1 md:grid-cols-3 mx-auto gap-y-20 gap-x-20">
+    <div class="pt-20 grid grid-cols-1 md:grid-cols-3 mx-auto gap-y-10 md:gap-y-20 gap-x-20">
         <div class="inline-flex flex-col">
             <div>
                 <h4 class="text-xl font-base dark:text-white">

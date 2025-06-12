@@ -110,4 +110,11 @@
     height: 2px;
     color: rgba(123, 123, 123, 0.5);
     opacity: 1;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+}
+
+.dark\:prose-invert:is(.dark *) :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    color: #ffffff !important;
+}
+
+@import './mobile.css';

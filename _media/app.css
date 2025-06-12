@@ -1,6 +1,12 @@
 /*! HydeFront v3.4.1 | MIT License | https://hydephp.com*/
 .hyde-search-context{margin-bottom:10px}.hyde-search-results{max-height:60vh;overflow-y:auto;margin-top:1.25em}#search-status{margin-top:0}#sidebar-toggle{position:relative;display:inline-block;width:2rem;height:2rem}#sidebar-toggle span.icon-bar{display:block;width:20px;height:2.375px;background-color:#000;position:absolute;left:5.5px;transition:all .3s ease-out}#sidebar-toggle span.icon-bar:first-child{top:9px}#sidebar-toggle span.icon-bar:nth-child(2),#sidebar-toggle span.icon-bar:nth-child(3){top:15px;transform-origin:center}#sidebar-toggle span.icon-bar:last-child{top:21px}#sidebar-toggle.active span.icon-bar:first-child{opacity:0}#sidebar-toggle.active span.icon-bar:nth-child(2){transform:rotate(45deg)}#sidebar-toggle.active span.icon-bar:nth-child(3){transform:rotate(-45deg)}#sidebar-toggle.active span.icon-bar:last-child{opacity:0}.dark #sidebar-toggle span.icon-bar{background-color:#fff;height:2px}.table-of-contents{padding-bottom:.75rem}.table-of-contents>li{margin-top:.15rem;margin-bottom:.35rem}.table-of-contents ul{padding-left:.5rem}.table-of-contents a{display:block;padding-left:2rem;margin-left:-2rem;opacity:.825}.table-of-contents a::before{content:"#";font-size:75%;opacity:.5;margin-right:4px;transition:opacity .3s ease-in-out}.table-of-contents a:hover{opacity:1;transition:opacity,background .3s ease-in-out;background-color:rgba(128,128,128,.2)}.table-of-contents a:hover::before{opacity:1}#hyde-docs .prose h1,#hyde-docs .prose h2,#hyde-docs .prose h3,#hyde-docs .prose h4,#hyde-docs .prose h5,#hyde-docs .prose h6{width:-moz-fit-content;width:fit-content}#hyde-docs .prose h1:hover .heading-permalink,#hyde-docs .prose h1:focus .heading-permalink,#hyde-docs .prose h2:hover .heading-permalink,#hyde-docs .prose h2:focus .heading-permalink,#hyde-docs .prose h3:hover .heading-permalink,#hyde-docs .prose h3:focus .heading-permalink,#hyde-docs .prose h4:hover .heading-permalink,#hyde-docs .prose h4:focus .heading-permalink,#hyde-docs .prose h5:hover .heading-permalink,#hyde-docs .prose h5:focus .heading-permalink,#hyde-docs .prose h6:hover .heading-permalink,#hyde-docs .prose h6:focus .heading-permalink{opacity:.75;filter:grayscale(100%);transition:opacity .1s ease-out}#hyde-docs .prose h1 .heading-permalink,#hyde-docs .prose h2 .heading-permalink,#hyde-docs .prose h3 .heading-permalink,#hyde-docs .prose h4 .heading-permalink,#hyde-docs .prose h5 .heading-permalink,#hyde-docs .prose h6 .heading-permalink{opacity:0;margin-left:.25rem;transition:opacity .3s ease;padding:0 .25rem;scroll-margin:1rem}#hyde-docs .prose h1 .heading-permalink::before,#hyde-docs .prose h2 .heading-permalink::before,#hyde-docs .prose h3 .heading-permalink::before,#hyde-docs .prose h4 .heading-permalink::before,#hyde-docs .prose h5 .heading-permalink::before,#hyde-docs .prose h6 .heading-permalink::before{content:"#"}#hyde-docs .prose h1 .heading-permalink:hover,#hyde-docs .prose h1 .heading-permalink:focus,#hyde-docs .prose h2 .heading-permalink:hover,#hyde-docs .prose h2 .heading-permalink:focus,#hyde-docs .prose h3 .heading-permalink:hover,#hyde-docs .prose h3 .heading-permalink:focus,#hyde-docs .prose h4 .heading-permalink:hover,#hyde-docs .prose h4 .heading-permalink:focus,#hyde-docs .prose h5 .heading-permalink:hover,#hyde-docs .prose h5 .heading-permalink:focus,#hyde-docs .prose h6 .heading-permalink:hover,#hyde-docs .prose h6 .heading-permalink:focus{opacity:1;filter:unset}html{scroll-behavior:smooth}.torchlight-enabled pre{border-radius:.25rem;margin-top:1rem;margin-bottom:1rem;overflow-x:auto;padding:0}.torchlight-enabled pre code.torchlight{display:block;min-width:-moz-max-content;min-width:max-content;padding-top:1rem;padding-bottom:1rem}.torchlight-enabled pre code.torchlight .line{padding-left:1rem;padding-right:1rem}.torchlight-enabled pre code.torchlight .line-number,.torchlight-enabled pre code.torchlight .summary-caret{margin-right:1rem}.prose blockquote.info{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.prose blockquote.success{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.prose blockquote.warning{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.prose blockquote.danger{--tw-border-opacity:1;border-color:rgb(220 38 38 / var(--tw-border-opacity, 1))}code{max-width:80vw;overflow-x:auto;vertical-align:top;word-break:break-all}pre code{display:block;max-width:unset}pre>code>.filepath{position:relative;top:-0.25rem;right:.25rem;float:right;opacity:.5;transition:opacity .25s}pre>code>.filepath:hover{opacity:1}.torchlight-enabled pre>code>.filepath{right:1rem}@media screen and (max-width: 767px){pre>code>.filepath{display:none}}@media screen and (min-width: 768px){[x-cloak].x-uncloak-md{display:revert !important}}.prose :where(th,td):not(:where([class~=not-prose],[class~=not-prose] *)){text-align:start}
 
+/* mobile */
+@media (max-width: 767px) {
+    .dark .contact-card {
+        background-image: none !important;
+    }
+}
 /*
 * This file is loaded into your Hyde/Hyde installation and is used to generate the styles for your project.
 * You can use this file to customize your TailwindCSS or to add new classes.
@@ -1163,9 +1169,6 @@ video {
 .-mt-4{
   margin-top: -1rem;
 }
-.-mt-\[2px\]{
-  margin-top: -2px;
-}
 .mb-0{
   margin-bottom: 0px;
 }
@@ -1174,9 +1177,6 @@ video {
 }
 .mb-2{
   margin-bottom: 0.5rem;
-}
-.mb-20{
-  margin-bottom: 5rem;
 }
 .mb-3{
   margin-bottom: 0.75rem;
@@ -1228,9 +1228,6 @@ video {
 }
 .mt-auto{
   margin-top: auto;
-}
-.-mt-\[1\.38rem\]{
-  margin-top: -1.38rem;
 }
 .block{
   display: block;
@@ -1441,8 +1438,8 @@ video {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
 }
-.gap-y-20{
-  row-gap: 5rem;
+.gap-y-10{
+  row-gap: 2.5rem;
 }
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
@@ -1629,9 +1626,6 @@ video {
 .p-4{
   padding: 1rem;
 }
-.p-\[6\.25rem\]{
-  padding: 6.25rem;
-}
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1741,6 +1735,9 @@ video {
 }
 .pt-6{
   padding-top: 1.5rem;
+}
+.pt-\[4rem\]{
+  padding-top: 4rem;
 }
 .text-left{
   text-align: left;
@@ -2078,7 +2075,12 @@ video {
     height: 2px;
     color: rgba(123, 123, 123, 0.5);
     opacity: 1;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+}
+
+.dark\:prose-invert:is(.dark *) :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    color: #ffffff !important;
+}
 
 .dark\:prose-invert:is(.dark *){
   --tw-prose-body: var(--tw-prose-invert-body);
@@ -2381,11 +2383,6 @@ video {
   color: rgb(212 212 216 / var(--tw-text-opacity, 1));
 }
 
-.dark\:text-zinc-500:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(113 113 122 / var(--tw-text-opacity, 1));
-}
-
 .dark\:shadow-xl:is(.dark *){
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -2511,6 +2508,10 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .md\:-mt-\[1\.38rem\]{
+    margin-top: -1.38rem;
+  }
+
   .md\:mb-12{
     margin-bottom: 3rem;
   }
@@ -2533,6 +2534,10 @@ video {
 
   .md\:mt-8{
     margin-top: 2rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:block{
@@ -2619,10 +2624,20 @@ video {
     gap: 2.5rem;
   }
 
+  .md\:gap-y-20{
+    row-gap: 5rem;
+  }
+
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:rounded-md{
@@ -2667,11 +2682,6 @@ video {
   .md\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .md\:px-7{
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
   }
 
   .md\:py-0{
@@ -2818,6 +2828,10 @@ video {
 
   .lg\:p-20{
     padding: 5rem;
+  }
+
+  .lg\:p-\[6\.25rem\]{
+    padding: 6.25rem;
   }
 
   .lg\:px-0{
