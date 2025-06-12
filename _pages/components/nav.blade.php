@@ -1,5 +1,5 @@
 <nav aria-label="Main navigation" id="main-navigation"
-    class="flex flex-wrap items-center justify-between py-4 md:px-4 lg:px-10 bg-white dark:bg-black sticky top-0 z-40 ">
+    class="flex flex-wrap items-center justify-between py-4 md:px-4 lg:px-10 bg-white dark:bg-black sticky top-0 z-40">
 
     {{-- desktop --}}
     <div class="flex flex-grow items-center flex-shrink-0 text-black dark:text-white">

@@ -8,6 +8,7 @@ return [
     'email' => "wyneybanez@gmail.com",
     'phone' => "+353 83 809 2402",
     'address' => "Cork, Munster, Ireland",
+    'github_username' => 'wyne-ybanez',
 
     'personal_projects' => [
         [

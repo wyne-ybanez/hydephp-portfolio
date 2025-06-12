@@ -13,7 +13,7 @@
     <div class="
           contact-card
           md:border
-          relative shadow-xl
+          relative md:shadow-xl
           py-10 md:p-10 lg:p-20 md:-mt-[1.38rem]
         "
         data-aos="fade-in" data-aos-delay="600">
