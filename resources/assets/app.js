@@ -19,7 +19,7 @@ AOS.init({
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.querySelector('nav');
+    const navbar = document.querySelector('#main-navigation');
 
     function handleScroll() {
         if (window.scrollY > 50) {

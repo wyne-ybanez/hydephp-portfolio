@@ -41,7 +41,7 @@ aos__WEBPACK_IMPORTED_MODULE_0___default().init({
   once: true
 });
 document.addEventListener('DOMContentLoaded', function () {
-  var navbar = document.querySelector('nav');
+  var navbar = document.querySelector('#main-navigation');
   function handleScroll() {
     if (window.scrollY > 50) {
       navbar.classList.add('shadow-md', 'dark:border-b-[0.8px]', 'dark:border-white');

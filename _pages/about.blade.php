@@ -49,7 +49,7 @@
                         <a href="{{ config('data.social_links.github') }}"
                             class="flex flex-row items-center space-x-4 group" target="_blank">
                             <div class="my-4 dark:text-gray-300">&rarr;</div>
-                            <div class="text-md text-zinc-300 font-mono relative overflow-hidden dark:text-white">
+                            <div class="text-md text-zinc-900 font-mono relative overflow-hidden dark:text-white">
                                 <div
                                     class="absolute h-0.5 w-full bg-zinc-400 transform bottom-0 -translate-x-24 group-hover:translate-x-0 transition duration-300">
                                 </div>

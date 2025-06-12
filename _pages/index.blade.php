@@ -20,9 +20,10 @@
             </h1>
         </div>
 
-        <div class="hidden md:block overflow-hidden mx-auto lg:mx-[13rem]">
+        {{-- Hero --}}
+        <div class="block overflow-hidden mx-auto lg:mx-[13rem]">
             <div class="flex flex-col w-full justify-center md:justify-start items-center md:items-start">
-                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8 overflow-hidden"
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-light text-zinc-700 dark:text-gray-200 my-5 lg:my-8 overflow-hidden"
                     data-aos="fade" data-aos-delay="300">
                     <div
                         class="text-black dark:text-gray-400 transform transition duration-500 flex md:flex-row items-center">
@@ -30,7 +31,7 @@
                         <span class="line hidden md:inline-block md:w-[30vw]"></span>
                     </div>
                 </h2>
-                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-light text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
                     data-aos="fade" data-aos-delay="600">
                     <div
                         class="text-black dark:text-gray-300 transform transition duration-500 flex md:flex-row items-center">
@@ -38,7 +39,7 @@
                         <div>Engineer</div>
                     </div>
                 </h2>
-                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-base text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
+                <h2 class="flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-light text-zinc-700 dark:text-gray-200 my-5 lg:my-8"
                     data-aos="fade" data-aos-delay="900">
                     <div
                         class="text-black dark:text-gray-200 transform transition duration-500 flex md:flex-row items-center">
@@ -50,124 +51,83 @@
             </div>
         </div>
 
+        {{-- Favourite Projects --}}
+        <div class="-mt-40 md:mt-[5.5rem]">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center pt-40 md:pt-20 lg:mx-10 md:mb-20 lg:my-0">
+                <h1
+                    class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center">
+                    Favourite Projects
+                </h1>
+                <a href="/projects.html/"
+                    class="mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-base flex flex-row space-x-4 items-center dark:text-white
+               transform transition ease-out duration-500 hover:dark:bg-gray-200 hover:bg-zinc-800 hover:text-white dark:hover:text-black dark:border dark:border-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-up-right-square" stroke="4" strokeWidth="4" viewBox="0 0 16 16">
+                        <path fillRule="evenodd"
+                            d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                    </svg>
+                    <p>View all</p>
+                </a>
+            </div>
+
+            {{-- Light mode projects --}}
+            <div class="dark:hidden grid md:grid-cols-3 gap-8 pb-40 mx-8 md:mx-0">
+                <a href="https://github.com/wyne-ybanez/Simple-laravel-e-commerce" target="_blank"
+                    class="w-full block col-span-3" data-aos="fade-up">
+                    <div
+                        class="relative overflow-hidden md:rounded-md shadow-lg dark:shadow-zinc-400 h-[200px] md:h-fit">
+                        <img src="/digi-art-overview.webp" alt="Simple Laravel E-Commerce"
+                            class="transform hover:scale-105 transition duration-1000 ease-out md:rounded-md object-cover h-full w-full" />
+                    </div>
+                </a>
+                <a href="https://github.com/wyne-ybanez/Weathertop-v2" target="_blank"
+                    class="w-full block col-span-3 sm:col-span-2" data-aos="fade-right" data-aos-delay="400">
+                    <div
+                        class="relative overflow-hidden md:rounded-md dark:shadow-zinc-400 shadow-lg h-[200px] md:h-fit">
+                        <img src="/weathertop-v2.webp" alt="WeatherTop V2"
+                            class="transform hover:scale-105 transition duration-1000 ease-out md:rounded-md object-cover h-full w-full" />
+                    </div>
+                </a>
+                <a href="https://github.com/wyne-ybanez/SneakrHead" target="_blank"
+                    class="w-full block col-span-3 sm:col-span-1 object-cover" data-aos="fade-left"
+                    data-aos-delay="400">
+                    <div
+                        class="relative overflow-hidden md:rounded-md dark:shadow-zinc-400 shadow-lg h-[200px] md:h-fit">
+                        <img src="/sneakr-heads.webp" alt="Sneak'r Heads"
+                            class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md h-full w-full" />
+                    </div>
+                </a>
+            </div>
+
+            {{-- Dark mode projects --}}
+            <div class="dark:grid hidden md:grid-cols-3 gap-8 pb-40 mx-8 md:mx-0">
+                <a href="https://space-invaderz-ultra-wyne.netlify.app/" target="_blank" class="w-full block col-span-3"
+                    data-aos="fade-up">
+                    <div class="relative overflow-hidden md:rounded-md dark:border h-[200px] md:h-fit">
+                        <img src="/space-invaders.webp" alt="Space Invaders"
+                            class="transform hover:scale-105 transition duration-1000 ease-out md:rounded-md object-cover h-full w-full" />
+                    </div>
+                </a>
+                <a href="https://wyne-ybanez.github.io/personal-portfolio-master/" target="_blank"
+                    class="w-full block col-span-3 sm:col-span-2" data-aos="fade-right" data-aos-delay="400">
+                    <div class="relative overflow-hidden md:rounded-md dark:border h-[200px] md:h-fit">
+                        <img src="/old-portfolio.webp" alt="Old Portfolio"
+                            class="transform hover:scale-105 transition duration-1000 ease-out md:rounded-md object-cover h-full w-full" />
+                    </div>
+                </a>
+                <a href="https://github.com/wyne-ybanez/Scrapedeep/" target="_blank"
+                    class="w-full block col-span-3 sm:col-span-1 object-cover" data-aos="fade-left"
+                    data-aos-delay="400">
+                    <div class="relative overflow-hidden md:rounded-md dark:border h-[200px] md:h-fit">
+                        <img src="/scrapedeep.webp" alt="Scrapedeep Project"
+                            class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md h-full w-full" />
+                    </div>
+                </a>
+            </div>
+        </div>
+
     </div>
-
-    {{-- <section>
-        <main id="content" class="mx-auto max-w-7xl py-[6.25rem] px-8">
-            <article class="mx-auto prose dark:prose-invert">
-                <div class="pb-0 grid grid-cols-1 md:grid-cols-2">
-                    <div class="justify-center">
-                        <h1 class="text-[1.6rem]">Hi, I'm Wyne Ybañez</h1>
-                        <h2 class="text-[2.8rem] mb-10 mt-0 md:my-0">Web Developer</h2>
-                    </div>
-                </div>
-
-                <div class="w-full">
-                    <img class="light-bg w-full object-cover my-0 md:py-28" src="media/bg-light.jpg"
-                        alt="Index hero image" />
-    
-                    <div class="dark-bg w-full">
-                        <div class="grid md:grid-cols-3 gap-8 pt-6 pb-24 md:py-28">
-                            <a href="https://fast-travel-self-driving.netlify.app/" target="_blank"
-                                class="w-full block col-span-3">
-                                <div class="relative overflow-hidden md:rounded-md dark:shadow-cyan-400 dark:shadow-xl h-fit">
-                                    <img src="media/fast-travel.png" alt="Fast-Travel, Self-Driving Taxi Booking App"
-                                        class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md" />
-                                </div>
-                            </a>
-                            <a href="https://space-invaderz-ultra-wyne.netlify.app//" target="_blank"
-                                class="w-full block col-span-3 sm:col-span-2">
-                                <div class="relative overflow-hidden md:rounded-md dark:shadow-purple-500 dark:shadow-xl h-fit">
-                                    <img src="media/space-invaders.png" alt="Space Invaderz Ultra"
-                                        class="transform hover:scale-105 transition duration-1000 ease-out object-cover" />
-                                </div>
-                            </a>
-                            <a href="https://weathertop-v2.herokuapp.com/" target="_blank"
-                                class="w-full block col-span-3 sm:col-span-1 object-cover">
-                                <div class="relative overflow-hidden md:rounded-md dark:shadow-green-300 dark:shadow-xl h-fit">
-                                    <img src="media/weathertop.png" alt="WeatherTop V2"
-                                        class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="article-content">
-                    <h1 id="about">About Me</h1>
-                    <h2 class="laravel">Enthusiastic, Learner, Curious, Active, Driven. Currently building with <a
-                            href="https://laravel.com/">Laravel</a></h2>
-                    <p>I gained considerable experience whilst working for a digital marketing agency. I’ve developed
-                        and maintained websites for businesses within construction, healthcare, science and many other
-                        sectors.</p>
-
-                    <h3>Educational Background</h3>
-                    <p>I completed my undergraduate with a Degree in Arts: English Literature and Computer Science.
-                        During my time in college, I developed a strong foundation in critical thinking, creativity, and
-                        cultural studies, which enhanced my understanding of diverse human experiences and historical
-                        contexts. During the global COVID-19 pandemic, I decided to broaden my skills by learning a
-                        technical skill, that being Full Stack Software Development. Utilizing various online resources
-                        and joining Code Institute, I immersed myself in the world of web development, developing in
-                        both front-end and back-end technologies. This self-directed learning experience allowed me to
-                        combine my creative background with technical proficiency.</p>
-
-                    <h3>Experience &amp; Continuous Learning</h3>
-                    <p>As a web developer with 2 years of experience, I have honed a diverse skill set spanning website
-                        builds, technical maintenance, client support, and self-directed learning. Throughout my career,
-                        I have consistently demonstrated the ability to collaborate and coordinate effectively with
-                        cross-functional teams to deliver high-quality websites and applications.</p>
-                    <p>One of the hallmarks of my work has been a commitment to thorough troubleshooting, testing, and
-                        software maintenance but also that of enhancing my relationships with others such as clients and
-                        those within my organization. I go above and beyond to identify and resolve issues before they
-                        impact the end-user experience. I track, document, and solve issues with absolute transparency.
-                        This dedication is complemented by my strong customer service orientation - I have a proven
-                        track record of managing support inquiries and training clients on website administration.</p>
-                    <p>Beyond day-to-day operations, I leveraged my research and self-teaching skills to develop my own
-                        expertise. I undergo coding courses and build personal projects in order to enhance my skills
-                        and also familiarize myself with emerging technologies. Projects I have made have not only
-                        expanded my own knowledge, but have also enabled me to contribute positively to the
-                        organizations I serve.</p>
-                    </p>
-
-                    <h3>Active Skills</h3>
-                    <ul class="flexbox-horizontal">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
-                        <li>SCSS</li>
-                        <li>Tailwind</li>
-                        <li>JavaScript</li>
-                        <li>Vue</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                        <li>Wordpress</li>
-                    </ul>
-
-                    <h3>Previous Tools</h3>
-                    <ul class="flexbox-horizontal">
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>Flask</li>
-                        <li>Django</li>
-                        <li>MongoDB</li>
-                        <li>Express.js</li>
-                        <li>Markdoc</li>
-                        <li>Material UI</li>
-                        <li>Bootstrap</li>
-                    </ul>
-
-                    <h3>Diving Into</h3>
-                    <ul class="flexbox-horizontal">
-                        <li>HTTP</li>
-                        <li>Laravel</li>
-                        <li>*NIX Systems</li>
-                        <li>Intertia.js</li>
-                    </ul>
-                </div>
-            </article>
-        </main>
-    </section> --}}
-
     @include('components.footer')
 </body>
 
