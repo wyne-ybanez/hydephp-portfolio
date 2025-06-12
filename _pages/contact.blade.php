@@ -4,7 +4,7 @@
 
     {{-- Title --}}
     <div class="antialiased">
-        <h1 class="text-5xl md:text-9xl font-base md:text-left dark:text-white" data-aos="fade-right">
+        <h1 class="text-5xl md:text-9xl font-light md:text-left dark:text-white" data-aos="fade-right">
             Contact
         </h1>
     </div>
@@ -20,7 +20,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="md:ml-4">
                 <header class="">
-                    <h3 class="font-medium text-4xl dark:text-white">
+                    <h3 class="font-light text-4xl dark:text-white">
                         Get in touch, let's talk.
                     </h3>
                     <p class="font-light text-base mt-2 leading-loose">

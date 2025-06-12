@@ -2,7 +2,7 @@
 @section('content')
     @php($pageTitle = 'Projects - Wyne Ybanez')
 
-    <div class="justify-center mb-6">
+    <div class="justify-center mb-6" data-aos="fade-right">
         <h1 class="text-5xl md:text-8xl font-light text-left dark:text-white">Projects</h1>
     </div>
     <div class="md:pt-20 pt-10 md:pb-24 pb-20" data-aos="fade-in" data-aos-delay="600">

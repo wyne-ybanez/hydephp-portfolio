@@ -11,7 +11,7 @@
 
     @include('components.nav')
 
-    <div class="mx-auto md:mx-16 lg:mx-28 lg:mx-auto">
+    <div class="mx-auto md:mx-16 lg:mx-28">
         <div class="mx-auto md:mx-28">
             <div
                 class="mt-[2.5rem] md:mt-24 flex items-start justify-center md:justify-start mx-auto lg:mx-[13rem] max-w-6xl">
@@ -77,7 +77,7 @@
         </div>
 
         {{-- Latest Code --}}
-        {{-- <div class="latest-code">
+        <div class="latest-code">
             <div class="flex flex-col md:flex-row justify-between items-center md:pt-10 md:mx-10">
                 <h2
                     class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center lg:text-left">
@@ -94,7 +94,7 @@
                     <p>View GitHub</p>
                 </a>
             </div>
-             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:-mt-6 gap-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:-mt-6 gap-y-10">
                 @php
                     $githubUsername = config('data.github_username');
                     $repositories = getLatestRepos($githubUsername);
@@ -107,8 +107,8 @@
                         'repoDescription' => $repo['description'],
                     ])
                 @endforeach
-            </div> --}}
-    </div>
+            </div>
+        </div>
 
     </div>
 
