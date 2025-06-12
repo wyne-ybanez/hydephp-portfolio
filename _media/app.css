@@ -1370,6 +1370,9 @@ video {
 .max-w-xs{
   max-width: 20rem;
 }
+.max-w-\[90\%\]{
+  max-width: 90%;
+}
 .flex-shrink-0{
   flex-shrink: 0;
 }
@@ -1738,6 +1741,9 @@ video {
 }
 .pt-\[4rem\]{
   padding-top: 4rem;
+}
+.pl-6{
+  padding-left: 1.5rem;
 }
 .text-left{
   text-align: left;
