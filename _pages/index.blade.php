@@ -78,7 +78,7 @@
         </div>
 
         {{-- Latest Code --}}
-        <div class="latest-code">
+        <div class="latest-code md:mb-12">
             <div class="flex flex-col md:flex-row justify-between items-center md:pt-10 md:mx-10">
                 <h2 class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-14 md:mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center lg:text-left relative -z-10"
                     data-aos="fade-right">
@@ -96,7 +96,7 @@
                     <p>View GitHub</p>
                 </a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:-mt-6 gap-y-10 mx-8 md:mx-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:-mt-[3.8rem] gap-y-10 mx-8 md:mx-0">
                 @php
                     /* this is using the github api, comment out for the mean time for a more static approach
                      * calling the api and applying its data is causing performance issues

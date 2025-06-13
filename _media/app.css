@@ -1337,6 +1337,12 @@ video {
 .mt-auto{
   margin-top: auto;
 }
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+.mb-12{
+  margin-bottom: 3rem;
+}
 .block{
   display: block;
 }
@@ -2780,6 +2786,18 @@ video {
     padding-top: 5rem;
   }
 
+  .md\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .md\:pb-6{
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pb-10{
+    padding-bottom: 2.5rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -2892,6 +2910,10 @@ video {
 
   .lg\:ml-8{
     margin-left: 2rem;
+  }
+
+  .lg\:-mt-\[3\.8rem\]{
+    margin-top: -3.8rem;
   }
 
   .lg\:grid-cols-3{
