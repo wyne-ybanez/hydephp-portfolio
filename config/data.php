@@ -61,4 +61,37 @@ return [
         'currentProject' => "Laravel",
         'currentProjectUrl' => "https://github.com/wyne-ybanez/",
     ],
+
+    'repositories' => [
+        [
+            'url' => 'https://github.com/wyne-ybanez/simple-laravel-e-commerce',
+            'name' => 'Simple Laravel E-commerce',
+            'description' => 'A basic and fast spin up of a Laravel e-commerce application, with complimentary admin user & panel.'
+        ],
+        [
+            'url' => 'https://github.com/wyne-ybanez/Space-InvaderZ',
+            'name' => 'Space InvaderZ',
+            'description' => 'Space invaders built on canvas. Shooting game practicing OOP, Styles and Particles '
+        ],
+        [
+            'url' => 'https://github.com/wyne-ybanez/php-rest-api',
+            'name' => 'PHP REST API',
+            'description' => 'Basic REST API using plain, object-oriented PHP, MySQL and HTTP.'
+        ],
+        [
+            'url' => 'https://github.com/wyne-ybanez/SneakrHead',
+            'name' => 'SneakrHead',
+            'description' => "Sneak'r Heads is a Shoe E-Commerce Store. It's a project that uses Django for full stack development and is one of my milestone projects."
+        ],
+        [
+            'url' => 'https://github.com/wyne-ybanez/Scrapedeep',
+            'name' => 'ScrapeDeep',
+            'description' => 'A PHP Web Content Scraper. Useful for scraping content off old websites for site rework.'
+        ],
+        [
+            'url' => 'https://github.com/wyne-ybanez/Weathertop-v2',
+            'name' => 'WeatherTop V2',
+            'description' => 'Version 2.0 of WeatherTop project developed using Javascript, Express, Node, Fomantic.'
+        ]
+    ],
 ];

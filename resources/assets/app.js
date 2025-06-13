@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleScroll() {
         if (window.scrollY > 50) {
-            navbar.classList.add('shadow-md', 'dark:border-b-[0.8px]', 'dark:border-white');
+            navbar.classList.add('shadow-md', 'scrolled');
         } else {
-            navbar.classList.remove('shadow-md', 'dark:border-b-[0.8px]', 'dark:border-white');
+            navbar.classList.remove('shadow-md', 'scrolled');
         }
     }
 

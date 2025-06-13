@@ -1074,6 +1074,9 @@ video {
 .top-auto{
   top: auto;
 }
+.-z-10{
+  z-index: -10;
+}
 .z-10{
   z-index: 10;
 }
@@ -2065,6 +2068,10 @@ video {
     color: #ffffff !important;
 }
 
+.dark nav.scrolled {
+    border-bottom: 0.8px solid #ffffff !important;
+}
+
 .dark\:prose-invert:is(.dark *){
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
@@ -2258,10 +2265,6 @@ video {
 
 .dark\:border-0:is(.dark *){
   border-width: 0px;
-}
-
-.dark\:border-b-\[0\.8px\]:is(.dark *){
-  border-bottom-width: 0.8px;
 }
 
 .dark\:border-\[\#1b2533\]:is(.dark *){
