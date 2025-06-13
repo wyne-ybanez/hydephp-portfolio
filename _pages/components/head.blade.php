@@ -1,10 +1,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $pageTitle ?? 'Wyne Ybañez - Web Developer' }}</title>
+    <title>{{ $pageTitle ?? 'Wyne Ybañez - Developer' }}</title>
 
-    <meta name="twitter:title" content="Wyne Ybañez - Web Developer">
-    <meta property="og:title" content="Wyne Ybañez - Web Developer">
+    <meta name="twitter:title" content="Wyne Ybañez - Developer">
+    <meta property="og:title" content="Wyne Ybañez - Developer">
 
     <meta name="generator" content="HydePHP v1.7.3">
     <meta property="og:site_name" content="Wyne Ybañez">
