@@ -8,12 +8,12 @@
         </h1>
     </div>
     <div class="-mt-4">
-        <div class="text-container md:pt-20 pt-10 animate fade-in">
+        <div class="animate fade-in delay-600 text-container md:pt-20 pt-10">
             <p
-                class="text-xl lg:px-0 md:text-4xl font-light dark:text-gray-200 leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
+                class="text-xl lg:px-0 md:text-4xl font-light dark:text-white leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
                 {{ config('data.about.title') }}.
                 Currently building with
-                <a class="hover:shadow-zinc-900 rounded-md px-2 py-0 mx-1 text-black dark:text-white hover:shadow-lg transform transition duration-200 dark:hover:shadow-zinc-400 underline hover:no-underline"
+                <a class="hover:shadow-zinc-900 rounded-md px-2 py-0 mx-1 text-black dark:text-white hover:shadow-lg dark:hover:shadow-zinc-400 underline hover:no-underline"
                     href={{ config('data.about.currentProjectUrl') }}>
                     {{ config('data.about.currentProject') }}
                 </a>.
