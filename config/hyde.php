@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'name' => env('SITE_NAME', 'HydePHP'),
+    'name' => env('SITE_NAME', 'Wyne HydePHP Portfolio'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return [
     |
     */
 
-    'url' => env('SITE_URL', 'http://localhost'),
+    'url' => env('SITE_URL', 'https://wyne-ybanez.github.io/hydephp-portfolio'),
 
     /*
     |--------------------------------------------------------------------------
