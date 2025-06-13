@@ -106,7 +106,6 @@
 
 .plus::before {
     content: '+';
-    height: 2px;
     color: rgba(123, 123, 123, 0.5);
     opacity: 1;
     margin-right: 2rem;

@@ -57,8 +57,8 @@ return [
 
     'about' => [
         'title' => "Enthusiastic, Curious, Active, Driven",
-        'currentProject' => "Laravel",
-        'currentProjectUrl' => "https://github.com/wyne-ybanez/",
+        'currentProject' => "PHP",
+        'currentProjectUrl' => "https://www.php.net/",
     ],
 
     'repositories' => [

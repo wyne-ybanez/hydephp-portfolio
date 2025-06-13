@@ -10,7 +10,7 @@
     <div class="-mt-4">
         <div class="text-container md:pt-20 pt-10">
             <p
-                class="animate fade-in delay-300 text-xl lg:px-0 md:text-4xl font-base dark:text-gray-200 leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
+                class="animate fade-in delay-300 text-xl lg:px-0 md:text-4xl font-light dark:text-gray-200 leading-[2rem] md:leading-[4rem] lg:leading-[4rem]">
                 {{ config('data.about.title') }}.
                 Currently building with
                 <a class="hover:shadow-zinc-900 rounded-md px-2 py-0 mx-1 text-black dark:text-white hover:shadow-lg transform transition duration-200 dark:hover:shadow-zinc-400 underline hover:no-underline"
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="animate fade-left delay-600 col-span-1 md:col-span-2 text-lg dark:text-white">
+        <div class="animate fade-left delay-600 col-span-1 md:col-span-2 text-lg font-light dark:text-white">
             <p class="mb-4">
                 I've been coding professionally for nearly 3 years now, creating websites for businesses in a
                 number

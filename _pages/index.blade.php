@@ -14,7 +14,7 @@
     <div class="mx-auto md:mx-16 lg:mx-28">
         <div class="mx-auto md:mx-28">
             <div
-                class="animate fade-in mt-[2.5rem] md:mt-24 flex items-start justify-center md:justify-start mx-auto lg:mx-[13rem] max-w-6xl">
+                class="animate fade-in mt-[2.5rem] md:mt-24 flex items-start justify-center md:justify-start mx-auto xl:mx-[10rem]">
                 <h1
                     class="text-[2rem] md:text-[1.7rem] uppercase tracking-[0.2em] font-bold md:font-semibold text-zinc-500 dark:text-gray-300 my-2 md:pb-8 whitespace-nowrap transition duration-500">
                     Wyne Ybañez
@@ -22,13 +22,13 @@
             </div>
 
             {{-- Hero --}}
-            <div class="block overflow-hidden mx-auto lg:mx-[13rem]">
+            <div class="block overflow-hidden mx-auto xl:mx-[10rem]">
                 <div class="flex flex-col w-full justify-center md:justify-start items-center md:items-start">
                     <h2
-                        class="animate fade-in delay-300 flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-light text-zinc-700 dark:text-gray-200 my-5 lg:my-8 overflow-hidden">
+                        class="animate fade-in delay-300 flex flex-row md:justify-start text-5xl md:text-7xl lg:text-8xl font-light text-zinc-700 dark:text-gray-200 my-5 lg:my-8">
                         <div
                             class="text-black dark:text-gray-400 transform transition duration-500 flex md:flex-row items-center">
-                            <div>Developer</div>
+                            <div>Programmer</div>
                             <span class="line hidden md:inline-block md:w-[30vw]"></span>
                         </div>
                     </h2>
@@ -37,7 +37,7 @@
                         <div
                             class="text-black dark:text-gray-300 transform transition duration-500 flex md:flex-row items-center">
                             <span class="plus inline-block"></span>
-                            <div>Engineer</div>
+                            <div>Developer</div>
                         </div>
                     </h2>
                     <h2
@@ -46,7 +46,7 @@
                             class="text-black dark:text-gray-200 transform transition duration-500 flex md:flex-row items-center">
                             <span class="plus inline-block"></span>
                             <span class="plus inline-block"></span>
-                            <div>Artisan</div>
+                            <div>Hobbyist</div>
                         </div>
                     </h2>
                 </div>
@@ -62,7 +62,7 @@
                     Favourite Projects
                 </h1>
                 <a href="/projects.html/"
-                    class="hidden md:block mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-base flex flex-row space-x-4 items-center dark:text-white
+                    class="hidden md:flex mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-base flex-row space-x-4 items-center content-center dark:text-white
                transform transition ease-out duration-500 hover:dark:bg-gray-200 hover:bg-zinc-800 hover:text-white dark:hover:text-black dark:border dark:border-white"
                     data-aos="fade-left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -85,7 +85,7 @@
                     Latest Code
                 </h2>
                 <a href="{{ config('data.social_links.github') }}"
-                    class="hidden md:block mb-20 md:mb-0 px-8 py-4 rounded-md bg-transparent shadow-lg text-xl font-base flex flex-row space-x-4 items-center dark:text-white
+                    class="hidden md:flex mb-20 md:mb-0 px-8 py-4 rounded-md bg-transparent shadow-lg text-xl font-base flex-row space-x-4 items-center content-center dark:text-white
             transform transition ease-out duration-500 hover:dark:bg-gray-200 dark:border dark:border-white hover:bg-zinc-800 hover:text-white dark:hover:text-black"
                     data-aos="fade-left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
