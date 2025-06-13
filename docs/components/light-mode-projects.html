@@ -1,0 +1,23 @@
+<div class="dark:hidden grid md:grid-cols-3 gap-8 pb-10 md:pb-32 lg:pb-40 mx-8 md:mx-0">
+    <a href="https://github.com/wyne-ybanez/Simple-laravel-e-commerce" target="_blank" class="w-full block col-span-3"
+        data-aos="fade-up">
+        <div class="relative overflow-hidden md:rounded-md shadow-lg dark:shadow-zinc-400 h-[200px] md:h-fit">
+            <img src="/digi-art-overview.webp" alt="Simple Laravel E-Commerce"
+                class="transform hover:scale-105 transition duration-1000 ease-out md:rounded-md object-cover h-full w-full" />
+        </div>
+    </a>
+    <a href="https://github.com/wyne-ybanez/Weathertop-v2" target="_blank" class="w-full block col-span-3 sm:col-span-2"
+        data-aos="fade-right" data-aos-delay="400">
+        <div class="relative overflow-hidden md:rounded-md dark:shadow-zinc-400 shadow-lg h-[200px] md:h-fit">
+            <img src="/weathertop-v2.webp" alt="WeatherTop V2"
+                class="transform hover:scale-105 transition duration-1000 ease-out md:rounded-md object-cover h-full w-full" />
+        </div>
+    </a>
+    <a href="https://github.com/wyne-ybanez/SneakrHead" target="_blank"
+        class="w-full block col-span-3 sm:col-span-1 object-cover" data-aos="fade-left" data-aos-delay="400">
+        <div class="relative overflow-hidden md:rounded-md dark:shadow-zinc-400 shadow-lg h-[200px] md:h-fit">
+            <img src="/sneakr-heads.webp" alt="Sneak'r Heads"
+                class="transform hover:scale-105 transition duration-1000 ease-out object-cover md:rounded-md h-full w-full" />
+        </div>
+    </a>
+</div>
