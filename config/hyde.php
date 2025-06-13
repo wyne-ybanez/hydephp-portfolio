@@ -53,7 +53,7 @@ return [
     |
     */
 
-    'url' => 'https://wyne-ybanez.github.io/hydephp-portfolio',
+    'url' => 'http://localhost:8080',
 
     /*
     |--------------------------------------------------------------------------
