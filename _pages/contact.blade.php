@@ -3,20 +3,15 @@
     @php($pageTitle = 'Contact - Wyne Ybanez')
 
     {{-- Title --}}
-    <div class="antialiased">
-        <h1 class="text-5xl md:text-9xl font-light md:text-left dark:text-white" data-aos="fade-right">
+    <div class="animate fade-right antialiased">
+        <h1 class="text-5xl md:text-9xl font-light md:text-left dark:text-white">
             Contact
         </h1>
     </div>
 
     {{-- contact card --}}
-    <div class="
-          contact-card
-          md:border
-          relative md:shadow-xl
-          py-10 md:p-10 lg:p-20 md:-mt-[1.38rem]
-        "
-        data-aos="fade-in" data-aos-delay="600">
+    <div
+        class="animate fade-in delay-300 contact-card md:border relative md:shadow-xl py-10 md:p-10 lg:p-20 md:-mt-[1.38rem]">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="md:ml-4">
                 <header class="">

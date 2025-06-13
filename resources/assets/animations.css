@@ -1,0 +1,98 @@
+/*
+Because AOS is bad when there is browser caching
+and i'm too lazy to come up with js object observer
+
+hence, rely on keyframes.
+*/
+
+/* Initialize */
+.animate {
+    opacity: 0;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade Right */
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade Left */
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Usage Classes */
+.fade-in {
+    animation: fadeIn 0.3s ease forwards;
+    animation-duration: 1s;
+}
+
+.fade-right {
+    animation: fadeRight 0.8s ease forwards;
+    animation-duration: 1s;
+}
+
+.fade-left {
+    animation: fadeLeft 0.8s ease forwards;
+    animation-duration: 1s;
+}
+
+/* Duration Variations */
+.duration-slow {
+    animation-duration: 1.2s;
+}
+
+.duration-fast {
+    animation-duration: 0.5s;
+}
+
+/* Delay Variations */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+.delay-900 {
+    animation-delay: 0.9s;
+}
