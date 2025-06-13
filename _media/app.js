@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   window.addEventListener('scroll', handleScroll);
 });
+window.addEventListener('load', function () {
+  aos__WEBPACK_IMPORTED_MODULE_0___default().refresh();
+});
 
 /***/ }),
 

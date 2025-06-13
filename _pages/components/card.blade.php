@@ -1,4 +1,5 @@
-<a href="{{ $url ?? '#' }}" target="_blank" class="github-repo p-6 border rounded-md">
+<a href="{{ $url ?? '#' }}" target="_blank" class="github-repo p-6 border rounded-md" data-aos="fade-in"
+    data-aos-delay="400">
     <div class="group flex flex-col w-full">
         <h4 class="text-2xl font-base">
             {{ $repoName ?? 'Unknown Repo Name' }}

@@ -57,13 +57,14 @@
         <div class="-mt-40 md:mt-[5.5rem]">
             <div
                 class="flex flex-col md:flex-row justify-between items-center pt-44 md:pt-20 lg:mx-10 md:mb-20 lg:my-0">
-                <h1
-                    class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center">
+                <h1 class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center"
+                    data-aos="fade-right">
                     Favourite Projects
                 </h1>
                 <a href="/projects.html/"
                     class="mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-base flex flex-row space-x-4 items-center dark:text-white
-               transform transition ease-out duration-500 hover:dark:bg-gray-200 hover:bg-zinc-800 hover:text-white dark:hover:text-black dark:border dark:border-white">
+               transform transition ease-out duration-500 hover:dark:bg-gray-200 hover:bg-zinc-800 hover:text-white dark:hover:text-black dark:border dark:border-white"
+                    data-aos="fade-left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-up-right-square" stroke="4" strokeWidth="4" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
@@ -79,13 +80,14 @@
         {{-- Latest Code --}}
         <div class="latest-code">
             <div class="flex flex-col md:flex-row justify-between items-center md:pt-10 md:mx-10">
-                <h2
-                    class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center lg:text-left relative -z-10">
+                <h2 class="text-5xl md:text-9xl max-w-lg font-light text-zinc-900 mt-20 mb-10 md:my-0 md:text-zinc-200 dark:text-gray-400 text-center lg:text-left relative -z-10"
+                    data-aos="fade-right">
                     Latest Code
                 </h2>
                 <a href="{{ config('data.social_links.github') }}"
                     class="mb-20 md:mb-0 px-8 py-4 rounded-md bg-transparent shadow-lg text-xl font-base flex flex-row space-x-4 items-center dark:text-white
-            transform transition ease-out duration-500 hover:dark:bg-gray-200 dark:border dark:border-white hover:bg-zinc-800 hover:text-white dark:hover:text-black">
+            transform transition ease-out duration-500 hover:dark:bg-gray-200 dark:border dark:border-white hover:bg-zinc-800 hover:text-white dark:hover:text-black"
+                    data-aos="fade-left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-up-right-square" stroke="4" strokeWidth="4" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
@@ -106,7 +108,7 @@
                 @endphp
 
                 @foreach ($repositories as $repo)
-                    @include('components.github-repo-card', [
+                    @include('components.card', [
                         'url' => $repo['url'],
                         'repoName' => $repo['name'],
                         'repoDescription' => $repo['description'],

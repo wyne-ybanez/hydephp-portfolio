@@ -22,7 +22,7 @@
     </div>
 
     <div class="pt-20 grid grid-cols-1 md:grid-cols-3 mx-auto gap-y-10 md:gap-y-20 gap-x-20">
-        <div class="inline-flex flex-col">
+        <div class="inline-flex flex-col" data-aos="fade-right">
             <div>
                 <h4 class="text-xl font-base dark:text-white">
                     Contact
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="col-span-1 md:col-span-2 text-lg dark:text-white">
+        <div class="col-span-1 md:col-span-2 text-lg dark:text-white" data-aos="fade-left">
             <p class="mb-4">
                 From a humanities degree to a technical diplomas, my background bounces between
                 e-commerce and digital marketing, giving me a good mix of technical skills and business sense.

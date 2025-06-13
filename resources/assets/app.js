@@ -30,3 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', handleScroll);
 });
+
+window.addEventListener('load', function () {
+    AOS.refresh();
+});

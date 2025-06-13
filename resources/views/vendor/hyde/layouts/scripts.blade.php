@@ -8,6 +8,8 @@
     integrity="sha256-gOkV4d9/FmMNEkjOzVlyM2eNAWSUXisT+1RbMTTIgXI=" crossorigin="anonymous"></script>
 
 <script>
+    AOS.init();
+
     function toggleTheme() {
         if (localStorage.getItem('color-theme') === 'dark' || !('color-theme' in localStorage) && window.matchMedia(
                 '(prefers-color-scheme: dark)').matches) {
