@@ -61,7 +61,7 @@
                     data-aos="fade-right">
                     Favourite Projects
                 </h1>
-                <a href="/projects.html/"
+                <a href="{{ Hyde::url('/projects.html') }}"
                     class="hidden md:flex mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-base flex-row space-x-4 items-center content-center dark:text-white
                transform transition ease-out duration-500 hover:dark:bg-gray-200 hover:bg-zinc-800 hover:text-white dark:hover:text-black dark:border dark:border-white"
                     data-aos="fade-left">
