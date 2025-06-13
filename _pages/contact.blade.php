@@ -82,7 +82,7 @@
 
             {{-- developer image --}}
             <div>
-                <img src="/media/remote-work-man.png" alt="Man working on his computer" />
+                <img src="{{ Hyde::url('/media/remote-work-man.png') }}" alt="Man working on his computer" />
             </div>
         </div>
     </div>
