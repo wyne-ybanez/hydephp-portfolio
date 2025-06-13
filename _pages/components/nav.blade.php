@@ -55,30 +55,35 @@
             @php
                 $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
             @endphp
+
             <li class="md:mx-2">
-                <a href="{{ Hyde::url('/') }}" aria-current="page"
-                    @if ($currentPath === '/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
-                    @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Home</a>
+                <a href="{{ Hyde::url('/') }}"
+                    @if (Hyde::url('/')) class="block my-2 md:my-0 md:inline-block py-1 text-black hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+       @else
+           class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Home</a>
             </li>
+
             <li class="md:mx-2">
                 <a href="{{ Hyde::url('/projects.html') }}"
-                    @if ($currentPath === '/projects.html') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
-                    @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Projects</a>
+                    @if (Hyde::url('/projects.html')) class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+       @else
+           class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Projects</a>
             </li>
+
             <li class="md:mx-2">
                 <a href="{{ Hyde::url('/about.html') }}"
-                    @if ($currentPath === '/about.html') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-6 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
-                    @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>About</a>
+                    @if (Hyde::url('/about.html')) class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-6 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+       @else
+           class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>About</a>
             </li>
+
             <li class="md:mx-2">
                 <a href="{{ Hyde::url('/contact.html') }}"
-                    @if ($currentPath === '/contact.html') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
-                    @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Contact</a>
+                    @if (Hyde::url('/contact.html')) class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+       @else
+           class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Contact</a>
             </li>
+
             <li class="md:mx-2">
                 <a href="https://github.com/wyne-ybanez" target="_blank"
                     class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100">Github</a>
