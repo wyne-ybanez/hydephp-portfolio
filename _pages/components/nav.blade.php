@@ -3,7 +3,7 @@
 
     {{-- desktop --}}
     <div class="flex flex-grow items-center flex-shrink-0 text-black dark:text-white">
-        <a href="/" class="font-bold flex flex-col text-xl flex-wrap px-6" aria-label="Home page">
+        <a href="./" class="font-bold flex flex-col text-xl flex-wrap px-6" aria-label="Home page">
             W.Y.
         </a>
         <div class="ml-auto">
@@ -53,25 +53,25 @@
         :class="navigationOpen ? '' : 'hidden'" x-cloak>
         <ul aria-label="Navigation links" class="md:flex-grow md:flex gap-2 justify-end">
             <li class="md:mx-2">
-                <a href="/" aria-current="page"
+                <a href="../" aria-current="page"
                     @if (($_SERVER['REQUEST_URI'] ?? '') === '/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
                     class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Home</a>
             </li>
             <li class="md:mx-2">
-                <a href="/projects.html/"
+                <a href="../projects.html/"
                     @if (($_SERVER['REQUEST_URI'] ?? '') === '../projects.html/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
                     class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Projects</a>
             </li>
             <li class="md:mx-2">
-                <a href="/about.html/"
+                <a href="../about.html/"
                     @if (($_SERVER['REQUEST_URI'] ?? '') === '../about.html/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-6 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
                     class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>About</a>
             </li>
             <li class="md:mx-2">
-                <a href="/contact.html/"
+                <a href="../contact.html/"
                     @if (($_SERVER['REQUEST_URI'] ?? '') === '../contact.html/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
                     class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Contact</a>
