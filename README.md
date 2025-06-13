@@ -1,6 +1,8 @@
-# Hyde Portfolio
+# HydePHP Portfolio
 
-Built through HydePHP. See the documentation and learn more at https://hydephp.com/docs
+I've wanted to rewrite my Next.js portfolio into PHP for a long while.
+
+This portfolio is built through HydePHP. See the documentation and learn more at https://hydephp.com/docs
 
 &nbsp;
 
@@ -17,8 +19,6 @@ Built through HydePHP. See the documentation and learn more at https://hydephp.c
 4. `php hyde serve`
 
 Go to `localhost:8080`
-
-> If you want a Torchlight API key - create one or just ask me.
 
 &nbsp;
 

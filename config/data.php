@@ -3,7 +3,6 @@
 return [
     'githubUsername' => "wyne-ybanez",
     'name' => "W.Y.",
-    'designation' => "",
     'avatarUrl' => "/avatar.webp",
     'email' => "wyneybanez@gmail.com",
     'phone' => "+353 83 809 2402",
