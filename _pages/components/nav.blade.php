@@ -54,31 +54,31 @@
         <ul aria-label="Navigation links" class="md:flex-grow md:flex gap-2 justify-end">
             <li class="md:mx-2">
                 <a href="/" aria-current="page"
-                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>Home</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Home</a>
             </li>
             <li class="md:mx-2">
                 <a href="/projects.html/"
-                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/projects.html/') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/projects.html/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>Projects</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Projects</a>
             </li>
             <li class="md:mx-2">
                 <a href="/about.html/"
-                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/about.html/') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-6 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/about.html/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-6 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>About</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>About</a>
             </li>
             <li class="md:mx-2">
                 <a href="/contact.html/"
-                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/contact.html/') class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
+                    @if (($_SERVER['REQUEST_URI'] ?? '') === '/contact.html/') class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100 md:border-none md:underline -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent border-l-4 border-green-500"
                 @else
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100" @endif>Contact</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100" @endif>Contact</a>
             </li>
             <li class="md:mx-2">
                 <a href="https://github.com/wyne-ybanez" target="_blank"
-                    class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">Github</a>
+                    class="block my-2 md:my-0 md:inline-block py-1 text-black hover:underline dark:text-gray-100">Github</a>
             </li>
         </ul>
     </div>
