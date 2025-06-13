@@ -94,7 +94,7 @@
                     <p>View GitHub</p>
                 </a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:-mt-6 gap-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:-mt-6 gap-y-10 mx-8 md:mx-0">
                 @php
                     /* this is using the github api, comment out for the mean time for a more static approach
                      * calling the api and applying its data is causing performance issues
