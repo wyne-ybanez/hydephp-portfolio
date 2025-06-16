@@ -8,5 +8,5 @@ mix.js('resources/assets/app.js', 'app.js')
         require('tailwindcss'),
         require('autoprefixer'),
     ])
-    .setPublicPath('_site/media')
+    .setPublicPath('_media')
     .copyDirectory('docs/media', '_media')
