@@ -26,7 +26,7 @@ Go to `localhost:8080`
 
 ## Production
 
-Shortcut: `hyde build --run-prod`
+Shortcut - Run for production build: `hyde build --run-prod`
 
 &nbsp;
 
@@ -47,30 +47,13 @@ Shortcut: `hyde build --run-prod`
 
 &nbsp;
 
-## Documentation Focus
-
-Since the site is documentation focused, the output directory will be the root directory for the docs of this project. The root directory is `_site`. Normally it would go under `_site/docs` but again, this site is documetation focused so this has been changed.
-
-```php
-'output_directories' => [
-        \Hyde\Pages\HtmlPage::class => '',
-        \Hyde\Pages\BladePage::class => '',
-        \Hyde\Pages\MarkdownPage::class => '',
-        \Hyde\Pages\MarkdownPost::class => 'posts',
-        \Hyde\Pages\DocumentationPage::class => '', // changed to '' instead of 'docs'
-      ],
-```
-
-&nbsp;
-
 ## Framework expectations
 
 - After you run the `php hyde build` command to compile your static site, it will save your HTML files in the `_site` directory and output them through `_site`.
 - Hyde Documentation pages are files stored in the `_docs` directory
 - The filename is used as the filename for the compiled HTML
 - Filenames should use `kebab-case-name` format, followed by the appropriate extension
-- Files prefixed with `_underscores`are ignored by Hyde
-- You should always have an `index.md` file in the `_docs/` directory
+- Files prefixed with `_underscores` are ignored by Hyde
 
 &nbsp;
 
