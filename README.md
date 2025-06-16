@@ -4,6 +4,8 @@ I've wanted to rewrite my Next.js portfolio into PHP for a long while.
 
 This portfolio is built through HydePHP. See the documentation and learn more at https://hydephp.com/docs
 
+Live Site: https://wyne-ybanez.github.io/hydephp-portfolio/
+
 &nbsp;
 
 ## Personal Comment

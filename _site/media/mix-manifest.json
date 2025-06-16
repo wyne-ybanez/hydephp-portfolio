@@ -1,4 +1,15 @@
 {
     "/app.js": "/app.js",
-    "/app.css": "/app.css"
+    "/app.css": "/app.css",
+    "/_site/media/app.css": "/_site/media/app.css",
+    "/_site/media/app.js": "/_site/media/app.js",
+    "/_site/media/digi-art-overview.webp": "/_site/media/digi-art-overview.webp",
+    "/_site/media/favicon.ico": "/_site/media/favicon.ico",
+    "/_site/media/mix-manifest.json": "/_site/media/mix-manifest.json",
+    "/_site/media/old-portfolio.webp": "/_site/media/old-portfolio.webp",
+    "/_site/media/remote-work-man.png": "/_site/media/remote-work-man.png",
+    "/_site/media/scrapedeep.webp": "/_site/media/scrapedeep.webp",
+    "/_site/media/sneakr-heads.webp": "/_site/media/sneakr-heads.webp",
+    "/_site/media/space-invaders.webp": "/_site/media/space-invaders.webp",
+    "/_site/media/weathertop-v2.webp": "/_site/media/weathertop-v2.webp"
 }

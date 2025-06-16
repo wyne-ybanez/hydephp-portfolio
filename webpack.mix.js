@@ -10,7 +10,7 @@ mix.js('resources/assets/app.js', 'app.js')
     ])
     // For css
     .setPublicPath('docs/media')
-    .copyDirectory('docs/media', '_media')
+    .copyDirectory('_media', '_site/media')
 
     // For deployment
     .copyDirectory('_media', 'docs/media') // for hydebuild

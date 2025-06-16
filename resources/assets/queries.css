@@ -14,6 +14,16 @@
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
     }
+
+    #homepage {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    footer {
+        padding-left: 4.25rem !important;
+        padding-right: 4.25rem !important;
+    }
 }
 
 
