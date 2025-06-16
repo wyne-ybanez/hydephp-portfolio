@@ -12,6 +12,8 @@
 */
 
 @import '~hydefront/dist/hyde.css';
+@import 'queries.css';
+@import 'animations.css';
 
 @tailwind base;
 @tailwind components;
@@ -130,6 +132,3 @@ nav.scrolled {
     background-color: initial;
     background-image: linear-gradient(#0404044d, #0000004d);
 }
-
-@import './mobile.css';
-@import './animations.css'
