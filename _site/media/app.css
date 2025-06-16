@@ -8,6 +8,25 @@
         background-image: inherit !important;
     }
 }
+
+/* site - small desktop */
+@media (min-width: 1026px) and (max-width: 1279px) {
+  #main,
+  footer {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1026px) {
+  #main,
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /*
 Because AOS is bad when there is browser caching
 and i'm too lazy to come up with js object observer

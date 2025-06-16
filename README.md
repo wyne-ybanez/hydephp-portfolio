@@ -22,6 +22,12 @@ Go to `localhost:8080`
 
 &nbsp;
 
+## Deployment Script
+
+`php hyde build --run-prod`
+
+&nbsp;
+
 ## Features
 
 ### Built-in Frontend

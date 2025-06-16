@@ -8,10 +8,5 @@ mix.js('resources/assets/app.js', 'app.js')
         require('tailwindcss'),
         require('autoprefixer'),
     ])
-    .setPublicPath('docs/media')
-    .copyDirectory('docs/media', '_media')
-    //.copyDirectory('_media', 'docs/media')
-
-    /* Original */
-    // .setPublicPath('_site/media')
-    // .copyDirectory('_site/media', '_media')
+    .setPublicPath('_media')
+    .copyDirectory('_media', 'docs/media') // for hydebuild
