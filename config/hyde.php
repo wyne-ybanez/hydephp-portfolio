@@ -470,7 +470,7 @@ return [
     // The list of directories that are considered to be safe to empty upon site build.
     // If the site output directory is set to a directory that is not in this list,
     // the build command will prompt for confirmation before emptying it.
-    'safe_output_directories' => ['_site', 'docs', 'build'],
+    'safe_output_directories' => ['docs', 'build'],
 
     // Should a JSON build manifest with metadata about the build be generated?
     'generate_build_manifest' => true,
