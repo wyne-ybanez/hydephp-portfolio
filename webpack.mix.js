@@ -9,4 +9,10 @@ mix.js('resources/assets/app.js', 'app.js')
         require('autoprefixer'),
     ])
     .setPublicPath('docs/media')
-    .copyDirectory('_media', 'docs/media')
+    .copyDirectory('docs/media', '_media')
+
+    // .copyDirectory('_media', 'docs/media') ... for images ?
+
+    /* Original */
+    // .setPublicPath('_site/media')
+    // .copyDirectory('_site/media', '_media')

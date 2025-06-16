@@ -1,7 +1,0 @@
-/* mobile */
-@media (max-width: 767px) {
-    .contact-card,
-    .dark .contact-card {
-        background-image: inherit !important;
-    }
-}
