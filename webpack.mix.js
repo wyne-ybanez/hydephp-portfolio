@@ -10,8 +10,7 @@ mix.js('resources/assets/app.js', 'app.js')
     ])
     .setPublicPath('docs/media')
     .copyDirectory('docs/media', '_media')
-
-    // .copyDirectory('_media', 'docs/media') ... for images ?
+    //.copyDirectory('_media', 'docs/media')
 
     /* Original */
     // .setPublicPath('_site/media')
