@@ -6,6 +6,14 @@ This portfolio is built through HydePHP. See the documentation and learn more at
 
 &nbsp;
 
+## Personal Comment
+
+I'm not deploying this the proper way... if there even is a proper way? Anyway, for this branch - i'm using the `docs` as my output directory instead of `_site`.
+
+This may not be best practice, but this is what works for what I'm trying to do here.
+
+&nbsp;
+
 ## Getting Started - Run locally
 
 > See [Installation Guide](https://hydephp.com/docs/1.x/installation) and [Getting Started](https://hydephp.com/docs/1.x/getting-started) for the full details.
