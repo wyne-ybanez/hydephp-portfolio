@@ -26,7 +26,7 @@ Go to `localhost:8080`
 
 ## Production
 
-Shortcut - Run for production build: `hyde build --run-prod`
+Shortcut - Run for production build: `php hyde build --run-prod`
 
 &nbsp;
 
