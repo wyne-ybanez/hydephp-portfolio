@@ -11,7 +11,7 @@
 
     @include('components.nav')
 
-    <div class="mx-auto md:mx-16 lg:mx-28">
+    <div class="mx-auto max-w-[75rem] md:mx-16 lg:mx-auto">
         <div class="mx-auto md:mx-28">
             <div
                 class="animate fade-in mt-[2.5rem] md:mt-24 flex items-start justify-center md:justify-start mx-auto xl:mx-[10rem]">

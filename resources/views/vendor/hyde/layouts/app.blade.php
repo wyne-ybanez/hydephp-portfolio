@@ -9,7 +9,7 @@
     @include('components.nav')
 
     <section>
-        <main class="mx-auto pt-[4rem] lg:p-[7rem] px-8 md:px-12">
+        <main class="max-w-[75rem] mx-auto py-16 md:mx-16 lg:mx-auto px-8 md:px-0">
             <article class="mx-auto dark:prose-invert">
                 @yield('content')
             </article>

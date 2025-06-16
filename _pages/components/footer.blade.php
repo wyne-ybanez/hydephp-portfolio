@@ -1,5 +1,5 @@
 <footer id="footer" aria-label="Page footer" class="w-full bg-white dark:bg-black">
-    <div class="max-w-7xl mx-auto px-8 py-16">
+    <div class="max-w-[75rem] mx-auto py-16 px-8 md:px-0 md:mx-16 lg:mx-auto">
         <div class="h-0.5 w-full bg-black dark:bg-gray-300"></div>
         <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
             <div>
