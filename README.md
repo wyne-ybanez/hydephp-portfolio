@@ -4,6 +4,8 @@ I've wanted to rewrite my Next.js portfolio into PHP for a long while.
 
 This portfolio is built through HydePHP. See the documentation and learn more at https://hydephp.com/docs
 
+Live site: https://wyne-ybanez.github.io/hydephp-portfolio/
+
 &nbsp;
 
 ## Getting Started - Run locally
@@ -12,13 +14,19 @@ This portfolio is built through HydePHP. See the documentation and learn more at
 
 1. `npm install && composer install`
 
-2. `cp .env.example .env`
+2. `cp .env.example .env` - obviously write into your .env as suits you
 
 3. `php hyde build`
 
 4. `php hyde serve`
 
 Go to `localhost:8080`
+
+&nbsp;
+
+## Production
+
+Shortcut: `hyde build --run-prod`
 
 &nbsp;
 
