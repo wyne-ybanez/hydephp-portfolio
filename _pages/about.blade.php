@@ -89,9 +89,7 @@
 
         <div class="animate fade-left delay-600 col-span-1 md:col-span-2 text-lg font-light dark:text-white">
             <p class="mb-4">
-                I've been coding professionally for nearly 3 years now, creating websites for businesses in a
-                number
-                of industries.
+                I've been coding professionally for 3 years now, creating websites for businesses in a number of industries.
                 These days, I'm diving deeper into Laravel, PHP backend work, and WordPress projects, while
                 constantly learning about
                 bigger enterprise-level architecture through online courses and a deeper exploration within the craft.
