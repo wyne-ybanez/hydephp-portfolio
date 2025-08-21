@@ -59,7 +59,7 @@ Shortcut - Run for production build: `php hyde build --run-prod`
 
 ## Shortcut Commands
 
-You can scaffold blog post files using the `php hyde make:post` command which automatically creates the front matter, based on your input selections. You can also scaffold pages with the `php hyde make:page` command.
+You can scaffold pages with blade files using the `php hyde make:page --blade` command.
 
 Examples:
 
@@ -91,7 +91,7 @@ Creating static websites with HydePHP is incredibly easy. First you need some co
 
 ```bash
 php hyde make:post "My First Post"
-php hyde make:page "About Me"
+php hyde make:page --blade "New Blade Page"
 ```
 
 Once you have some content, you can run the build command to compile the content into beautiful static HTML.
@@ -99,23 +99,6 @@ Once you have some content, you can run the build command to compile the content
 `php hyde build`
 
 That's it.
-
-&nbsp;
-
-## Partials
-
-In `markdown.php` enable these settings:
-
-```
-'allow_html' => true,
-'enable_blade' => true,
-```
-
-These will allow us to edit the markdown with raw html or raw blade code. Hence, we can then reference partial files under `_docs/_partials` through:
-
-```
-[Blade]: {{ Hyde\Markdown\Models\Markdown::fromFile(DocumentationPage::sourcePath('_partials/_appearance'))->toHtml($page::class) }}
-```
 
 &nbsp;
 
