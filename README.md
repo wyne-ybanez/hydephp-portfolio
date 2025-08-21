@@ -4,15 +4,7 @@ I've wanted to rewrite my Next.js portfolio into PHP for a long while.
 
 This portfolio is built through HydePHP. See the documentation and learn more at https://hydephp.com/docs
 
-Live Site: https://wyne-ybanez.github.io/hydephp-portfolio/
-
-&nbsp;
-
-## Personal Comment
-
-I'm not deploying this the proper way... if there even is a proper way? Anyway, for this branch - i'm using the `docs` as my output directory instead of `_site`.
-
-This may not be best practice, but this is what works for what I'm trying to do here.
+Live site: https://wyne-ybanez.github.io/hydephp-portfolio/
 
 &nbsp;
 
@@ -22,7 +14,7 @@ This may not be best practice, but this is what works for what I'm trying to do 
 
 1. `npm install && composer install`
 
-2. `cp .env.example .env`
+2. `cp .env.example .env` - obviously write into your .env as suits you
 
 3. `php hyde build`
 
@@ -32,9 +24,9 @@ Go to `localhost:8080`
 
 &nbsp;
 
-## Deployment Script
+## Production
 
-Shortcut: `php hyde build --run-prod`
+Shortcut - Run for production build: `php hyde build --run-prod`
 
 &nbsp;
 
@@ -61,13 +53,13 @@ Shortcut: `php hyde build --run-prod`
 - Hyde Documentation pages are files stored in the `_docs` directory
 - The filename is used as the filename for the compiled HTML
 - Filenames should use `kebab-case-name` format, followed by the appropriate extension
-- Files prefixed with `_underscores`are ignored by Hyde
+- Files prefixed with `_underscores` are ignored by Hyde
 
 &nbsp;
 
 ## Shortcut Commands
 
-You can scaffold blog post files using the `php hyde make:post` command which automatically creates the front matter, based on your input selections. You can also scaffold pages with the `php hyde make:page` command.
+You can scaffold pages with blade files using the `php hyde make:page --blade` command.
 
 Examples:
 
@@ -99,7 +91,7 @@ Creating static websites with HydePHP is incredibly easy. First you need some co
 
 ```bash
 php hyde make:post "My First Post"
-php hyde make:page "About Me"
+php hyde make:page --blade "New Blade Page"
 ```
 
 Once you have some content, you can run the build command to compile the content into beautiful static HTML.
@@ -107,23 +99,6 @@ Once you have some content, you can run the build command to compile the content
 `php hyde build`
 
 That's it.
-
-&nbsp;
-
-## Partials
-
-In `markdown.php` enable these settings:
-
-```
-'allow_html' => true,
-'enable_blade' => true,
-```
-
-These will allow us to edit the markdown with raw html or raw blade code. Hence, we can then reference partial files under `_docs/_partials` through:
-
-```
-[Blade]: {{ Hyde\Markdown\Models\Markdown::fromFile(DocumentationPage::sourcePath('_partials/_appearance'))->toHtml($page::class) }}
-```
 
 &nbsp;
 
